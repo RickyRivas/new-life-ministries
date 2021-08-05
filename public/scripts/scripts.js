@@ -21,7 +21,7 @@ const navSlide = () => {
 };
 navSlide();
 /* fixed button Script */
-document.querySelector('video').playbackRate = .50;
+document.querySelector('video').playbackRate = 1;
 // Set a variable for our button element.
 const scrollToTopButton = document.getElementById("js-top");
 
