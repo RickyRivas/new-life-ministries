@@ -1,0 +1,134 @@
+@media (min-width: 0px) {
+    .new-landing {
+        width: 100%;
+        height: 90vh;
+        position: relative;
+    }
+
+    #videoBG {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        transform: translateX(-50%) translateY(-50%);
+        background: url('/public/images/20944707.jpg') no-repeat;
+        background-size: cover;
+        transition: 1s opacity;
+    }
+
+    & .new-landing-heading {
+        z-index: 2;
+        width: 100%;
+        max-width: 1200px;
+        position: absolute;
+        color: white;
+        padding: 1em;
+        height: max-content;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        & h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+            & span {
+                color: $primary-color;
+            }
+        }
+
+        & p {
+           font-size: 25px;
+           margin-bottom: 20px;
+        }
+
+        & :nth-child(3) {
+            & .new-btn {
+                color: white;
+                background-color: $primary-color;
+                padding: 10px 25px;
+            }
+        }
+    }
+
+    & .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .2);
+        z-index: 1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .new-landing {
+        width: 100vw;
+        position: relative;
+        height: 768px;
+
+        & .new-landing-heading {
+            z-index: 2;
+            width: 1200px;
+            position: absolute;
+            color: white;
+            padding: 2em;
+            height: max-content;
+
+            & h1 {
+                font-size: 4em;
+
+                & span {
+                    color: $primary-color;
+                }
+            }
+
+            & p {
+                margin-bottom: 1.5em;
+                font-size: 1.5em;
+                width: 500px;
+            }
+
+            & :nth-child(3) {
+                & .new-btn {
+                    color: white;
+                    background-color: $primary-color;
+                    padding: .5em 1.5em;
+                    margin-right: .5em;
+                }
+            }
+        }
+
+        & .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .3);
+            z-index: 1;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #videoBG {
+        width: auto;
+        height: 100%;
+    }
+}
