@@ -18,7 +18,7 @@
     position: fixed;
     z-index: 5;
     width: 100vw;
-    background-color: $primary-color;
+    background-color: transparent;
 
     & .is-active {
       box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -64,17 +64,19 @@
     text-align: left;
     position: relative;
     height: 100%;
+    color: white;
 
     & p {
       z-index: 0;
       margin: 0;
       letter-spacing: 1.5px;
+      font-size: 18px;
     }
 
     & img {
-      width: 2em;
-      height: 2em;
-      margin-right: .5em;
+      width: 35px;
+      height: 35px;
+      margin-right: .2em;
     }
   }
 
@@ -166,6 +168,7 @@
     align-items: center;
     height: 80px;
     width: 100vw;
+    background-color: transparent;
 
     & .nav-wrapper {
       z-index: 1000;
@@ -175,7 +178,7 @@
       height: 100%;
       width: 1000px;
       margin: auto;
-      background-color: white;
+      background-color: transparent;
 
     }
   }
@@ -279,6 +282,9 @@
     align-items: center;
     height: 80px;
     width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
 
     // top: 1.7em;
     // left: 50%;
@@ -292,7 +298,7 @@
       height: 100%;
       width: 1200px;
       margin: auto;
-      background-color: white;
+      background-color: transparent;
 
     }
   }
@@ -327,12 +333,13 @@
     opacity: 1;
     padding: .5em 1em;
     text-align: right;
-    color: black;
+    color: white;
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     opacity: 1;
+    white-space: nowrap;
 
 
     &::after {
@@ -348,8 +355,9 @@
     margin-top: 0;
   }
 
-  .nav-links a {
+  .nav-links li a {
     text-decoration: none;
+    color: white;
   }
 
   .hamburger.hamburger--spring {
@@ -363,16 +371,18 @@
     margin: 0;
     text-align: left;
     position: relative;
+    color: white;
 
     & p {
       z-index: 0;
       margin: 0;
+      font-size: 30px;
       letter-spacing: 1.5px;
     }
 
     & img {
-      width: 2em;
-      height: 2em;
+      width: 55px;
+      height: 55px;
     }
   }
 
@@ -382,7 +392,7 @@
 
   .nav-menu-logo {
     display: none;
-    color: #000;
+    color: white;
   }
 
 }
@@ -415,7 +425,7 @@
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: #000;
+  background-color: black;
 }
 
 .hamburger-box {
@@ -436,7 +446,7 @@
 .hamburger-inner::after {
   width: 40px;
   height: 3px;
-  background-color: #000;
+  background-color: #fff;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;

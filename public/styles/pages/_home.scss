@@ -3,21 +3,20 @@
         width: 100%;
         height: 90vh;
         position: relative;
+        overflow: hidden;
     }
 
     #videoBG {
-        position: fixed;
-        top: 50%;
+        position: absolute;
         left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
         z-index: -100;
-        transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%);
         background: url('/public/images/20944707.jpg') no-repeat;
         background-size: cover;
         transition: 1s opacity;
+        width: auto;
+        height: auto;
+        object-fit: contain;
     }
 
     & .new-landing-heading {
