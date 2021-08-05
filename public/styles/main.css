@@ -1288,6 +1288,7 @@ html {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center 20%;
   }
   #donations .donations .donations-gallery .right {
     -ms-grid-row: 2;
@@ -1388,6 +1389,7 @@ html {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center 20%;
   }
   #donations .donations .donations-gallery .right {
     -ms-grid-row: 2;
@@ -1488,6 +1490,7 @@ html {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center 20%;
   }
   #donations .donations .donations-gallery .right {
     -ms-grid-row: 2;
@@ -1704,6 +1707,7 @@ html {
     height: calc(-webkit-max-content + 100px);
     height: calc(-moz-max-content + 100px);
     height: calc(max-content + 100px);
+    padding: 2em;
   }
   .contact-section .contact-container {
     max-width: 1200px;
