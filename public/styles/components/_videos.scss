@@ -17,6 +17,7 @@
 
                 & .img-a {
                     position: relative;
+                    
 
                     & img {
                         max-width: 100%;
@@ -34,6 +35,9 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        &:hover{
+                            background-color: $primary-color;
+                        }
 
                         & img {
                             width: 1em;

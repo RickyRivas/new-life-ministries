@@ -635,7 +635,7 @@ html {
 @media (min-width: 0px) {
   .footer {
     width: 100vw;
-    padding: 2em 1em;
+    padding: 2em;
     background-color: #212529;
   }
   .footer .footer-container {
@@ -644,9 +644,9 @@ html {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -662,10 +662,13 @@ html {
     text-decoration: none;
   }
   .footer .col {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 1em;
+    text-align: left;
+    margin-bottom: 2em;
     font-weight: 100;
+  }
+  .footer .col .logo-footer {
+    width: 80px;
+    height: 80px;
   }
   .footer .col h2 {
     margin-bottom: .5em;
@@ -674,10 +677,12 @@ html {
     font-weight: 100;
     color: #ccffcc;
   }
+  .footer .col p {
+    color: white;
+  }
   .footer .col ul {
     list-style: none;
     width: 100%;
-    text-align: center;
   }
   .footer .col ul li {
     color: #f8f9fa;
@@ -687,6 +692,34 @@ html {
   }
   .footer .col ul li:hover {
     color: #adb5bd;
+  }
+  .footer .social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    color: white;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .social-media .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1em;
   }
   .footer .site-credit {
     margin: .5em 0;
@@ -716,20 +749,27 @@ html {
   .footer .footer-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+    max-width: unset;
     height: 100%;
     margin: auto;
   }
+  .footer .logo-footer {
+    width: 80px;
+    height: 80px;
+    margin-bottom: .5em;
+  }
+  .footer .social-media {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
   .footer .col {
     width: 100%;
-    text-align: center;
+    text-align: left;
     margin: 1em 0;
     height: 100%;
   }
@@ -741,7 +781,7 @@ html {
   .footer .col ul {
     list-style: none;
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
   .footer .col ul li {
     color: #e9ecef;
@@ -753,7 +793,7 @@ html {
 @media (min-width: 1000px) {
   .footer {
     width: 100vw;
-    padding: 2em 1em;
+    padding: 2em;
     background-color: #212529;
   }
   .footer .footer-container {
@@ -761,45 +801,74 @@ html {
     display: grid;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     place-items: center;
-    grid-gap: 2em;
+    grid-gap: 1em;
     width: 100%;
     height: 100%;
     margin: auto;
+    max-width: 1200px;
   }
   .footer .col {
-    width: 80%;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    text-align: center;
-    margin: 1em 0;
+    text-align: left;
+    margin: 0;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     height: 100%;
+    padding: 1em;
+    text-align: center;
   }
   .footer .col h2 {
     margin-bottom: .5em;
     font-size: 1em;
     letter-spacing: 3px;
+    text-align: left;
+  }
+  .footer .col p {
+    text-align: left;
+  }
+  .footer .col .social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer .col .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    margin-right: 1em;
   }
   .footer .col ul {
     list-style: none;
-    width: 100%;
-    text-align: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: left;
   }
   .footer .col ul li {
     color: #e9ecef;
@@ -859,6 +928,9 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  #videos .videos .video-box .img-a .play-a:hover {
+    background-color: #55c882;
   }
   #videos .videos .video-box .img-a .play-a img {
     width: 1em;
@@ -1010,6 +1082,292 @@ html {
   }
   #videos .videos .video-box .video-text p {
     line-height: 2;
+  }
+}
+
+@media (min-width: 0px) {
+  #donations {
+    width: 100%;
+    background-color: #F7FFF7;
+  }
+  #donations .donations {
+    max-width: 1200px;
+    padding: 1em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  #donations .donations .donations-gallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    grid-gap: 1em;
+    height: 50vh;
+        grid-template-areas: "top top" "left right";
+  }
+  #donations .donations .donations-gallery .top {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: top;
+    background-image: url(/public/images/dday1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #donations .donations .donations-gallery .right {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: right;
+    background-image: url(/public/images/day326.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #donations .donations .donations-gallery .left {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: left;
+    background-image: url(/public/images/dday135.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #donations .donations .donations-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #donations .donations .donations-text .products {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    place-items: center;
+  }
+  #donations .donations .donations-text .products .product {
+    color: black;
+    text-align: center;
+  }
+  #donations .donations .donations-text .products .product button {
+    background-color: #55c882;
+    padding: 10px 30px;
+    color: white;
+    border: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #donations {
+    width: 100%;
+    background-color: #F7FFF7;
+  }
+  #donations .donations {
+    width: 504px;
+    padding: 1em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    margin: auto;
+  }
+  #donations .donations .donations-gallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    grid-gap: 1em;
+    height: 50vh;
+        grid-template-areas: "top top" "left right";
+  }
+  #donations .donations .donations-gallery .top {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: top;
+    background-image: url(/public/images/dday1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #donations .donations .donations-gallery .right {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: right;
+    background-image: url(/public/images/day326.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #donations .donations .donations-gallery .left {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: left;
+    background-image: url(/public/images/dday135.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #donations .donations .donations-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #donations .donations .donations-text .products {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    place-items: center;
+  }
+  #donations .donations .donations-text .products .product {
+    color: black;
+    text-align: center;
+  }
+  #donations .donations .donations-text .products .product button {
+    background-color: #55c882;
+    padding: 10px 30px;
+    color: white;
+    border: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  #donations {
+    width: 100%;
+    background-color: #F7FFF7;
+    padding: 2em;
+  }
+  #donations .donations {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    margin: auto;
+    height: 504px;
+    grid-gap: 2em;
+  }
+  #donations .donations .donations-gallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
+    grid-gap: 1em;
+    height: 504px;
+    width: 504px;
+        grid-template-areas: "top top" "left right";
+  }
+  #donations .donations .donations-gallery .top {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: top;
+    background-image: url(/public/images/dday1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #donations .donations .donations-gallery .right {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: right;
+    background-image: url(/public/images/day326.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #donations .donations .donations-gallery .left {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: left;
+    background-image: url(/public/images/dday135.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #donations .donations .donations-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #donations .donations .donations-text .products {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    place-items: center;
+  }
+  #donations .donations .donations-text .products .product {
+    color: black;
+    text-align: center;
+  }
+  #donations .donations .donations-text .products .product button {
+    background-color: #55c882;
+    padding: 10px 30px;
+    color: white;
+    border: 0;
   }
 }
 
