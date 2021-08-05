@@ -1811,6 +1811,7 @@ html {
   .new-landing-heading :nth-child(3) .new-btn {
     color: white;
     cursor: pointer;
+    text-decoration: none;
     background-color: #55c882;
     padding: 10px 25px;
     margin-right: 10px;
@@ -1860,6 +1861,7 @@ html {
     width: 500px;
   }
   .new-landing .new-landing-heading :nth-child(3) .new-btn {
+    text-decoration: none;
     color: white;
     background-color: #55c882;
     padding: .5em 1.5em;
