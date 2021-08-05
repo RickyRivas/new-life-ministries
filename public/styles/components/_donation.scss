@@ -23,7 +23,7 @@
 
                 & .top {
                     grid-area: top;
-                    background-image: url(/public/images/dday1.jpg);
+                    background-image: url(/images/dday1.jpg);
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -31,7 +31,7 @@
 
                 & .right {
                     grid-area: right;
-                    background-image: url(/public/images/day326.jpg);
+                    background-image: url(/images/day326.jpg);
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -39,7 +39,7 @@
 
                 & .left {
                     grid-area: left;
-                    background-image: url(/public/images/dday135.jpg);
+                    background-image: url(/images/dday135.jpg);
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -69,7 +69,9 @@
                             padding: 10px 30px;
                             color: white;
                             border: 0;
-
+                            & :hover{
+                                opacity: .8;
+                            }
                         }
                     }
                 }
@@ -104,7 +106,7 @@
 
                 & .top {
                     grid-area: top;
-                    background-image: url(/public/images/dday1.jpg);
+                    background-image: url(/images/dday1.jpg);
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -112,7 +114,7 @@
 
                 & .right {
                     grid-area: right;
-                    background-image: url(/public/images/day326.jpg);
+                    background-image: url(/images/day326.jpg);
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -120,7 +122,7 @@
 
                 & .left {
                     grid-area: left;
-                    background-image: url(/public/images/dday135.jpg);
+                    background-image: url(/images/dday135.jpg);
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -189,7 +191,7 @@
 
                 & .top {
                     grid-area: top;
-                    background-image: url(/public/images/dday1.jpg);
+                    background-image: url(/images/dday1.jpg);
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -197,7 +199,7 @@
 
                 & .right {
                     grid-area: right;
-                    background-image: url(/public/images/day326.jpg);
+                    background-image: url(/images/day326.jpg);
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -205,7 +207,7 @@
 
                 & .left {
                     grid-area: left;
-                    background-image: url(/public/images/dday135.jpg);
+                    background-image: url(/images/dday135.jpg);
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -235,6 +237,94 @@
                             color: white;
                             border: 0;
 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    #donations {
+        width: 100%;
+        background-color: #F7FFF7;
+        padding: 2em;
+
+        & .donations {
+            width: 100%;
+            max-width: 1200px;
+            padding: 0em;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            margin: auto;
+            height: 504px;
+            grid-gap: 2em;
+
+            & .donations-gallery {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                order: unset;
+                grid-gap: 1em;
+                height: 504px;
+                width: 504px;
+                grid-template-areas:
+                    "top top"
+                    "left right";
+
+                & .top {
+                    grid-area: top;
+                    background-image: url(/images/dday1.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                & .right {
+                    grid-area: right;
+                    background-image: url(/images/day326.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                & .left {
+                    grid-area: left;
+                    background-image: url(/images/dday135.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            & .donations-text {
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                flex-direction: column;
+
+                & .products {
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 1fr;
+                    place-items: center;
+
+                    & .product {
+                        color: black;
+                        text-align: center;
+                        margin-bottom: unset;
+                        margin: 1em;
+
+                        & button {
+                            background-color: $primary-color;
+                            padding: 10px 30px;
+                            color: white;
+                            border: 0;
+                            & :hover {
+                                opacity: .8;
+                            }
                         }
                     }
                 }

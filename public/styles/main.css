@@ -968,6 +968,7 @@ html {
     font-size: 2em;
     display: block;
     position: relative;
+    margin-bottom: 20px;
   }
   #videos .videos .video-box .video-text h2::before {
     content: '';
@@ -1130,7 +1131,7 @@ html {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: top;
-    background-image: url(/public/images/dday1.jpg);
+    background-image: url(/images/dday1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1139,7 +1140,7 @@ html {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: right;
-    background-image: url(/public/images/day326.jpg);
+    background-image: url(/images/day326.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1148,7 +1149,7 @@ html {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: left;
-    background-image: url(/public/images/dday135.jpg);
+    background-image: url(/images/dday135.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1188,6 +1189,9 @@ html {
     color: white;
     border: 0;
   }
+  #donations .donations .donations-text .products .product button :hover {
+    opacity: .8;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1225,7 +1229,7 @@ html {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: top;
-    background-image: url(/public/images/dday1.jpg);
+    background-image: url(/images/dday1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1234,7 +1238,7 @@ html {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: right;
-    background-image: url(/public/images/day326.jpg);
+    background-image: url(/images/day326.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1243,7 +1247,7 @@ html {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: left;
-    background-image: url(/public/images/dday135.jpg);
+    background-image: url(/images/dday135.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1324,7 +1328,7 @@ html {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: top;
-    background-image: url(/public/images/dday1.jpg);
+    background-image: url(/images/dday1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1333,7 +1337,7 @@ html {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: right;
-    background-image: url(/public/images/day326.jpg);
+    background-image: url(/images/day326.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1342,7 +1346,7 @@ html {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: left;
-    background-image: url(/public/images/dday135.jpg);
+    background-image: url(/images/dday135.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1380,6 +1384,110 @@ html {
     padding: 10px 30px;
     color: white;
     border: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #donations {
+    width: 100%;
+    background-color: #F7FFF7;
+    padding: 2em;
+  }
+  #donations .donations {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    margin: auto;
+    height: 504px;
+    grid-gap: 2em;
+  }
+  #donations .donations .donations-gallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
+    grid-gap: 1em;
+    height: 504px;
+    width: 504px;
+        grid-template-areas: "top top" "left right";
+  }
+  #donations .donations .donations-gallery .top {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: top;
+    background-image: url(/images/dday1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #donations .donations .donations-gallery .right {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: right;
+    background-image: url(/images/day326.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #donations .donations .donations-gallery .left {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: left;
+    background-image: url(/images/dday135.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #donations .donations .donations-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #donations .donations .donations-text .products {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    place-items: center;
+  }
+  #donations .donations .donations-text .products .product {
+    color: black;
+    text-align: center;
+    margin-bottom: unset;
+    margin: 1em;
+  }
+  #donations .donations .donations-text .products .product button {
+    background-color: #55c882;
+    padding: 10px 30px;
+    color: white;
+    border: 0;
+  }
+  #donations .donations .donations-text .products .product button :hover {
+    opacity: .8;
   }
 }
 
