@@ -217,22 +217,6 @@ html {
   }
 }
 
-@media (min-width: 768px) {
-  nav {
-    height: 80px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: white;
-  }
-}
-
 @media (min-width: 1024px) {
   nav {
     z-index: 1000;
@@ -264,6 +248,11 @@ html {
     width: 1000px;
     margin: auto;
     background-color: transparent;
+  }
+  nav .nav-links li a {
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
   }
   nav.scroll {
     background-color: #d8f3dc;
@@ -342,15 +331,17 @@ html {
     margin: 0;
     text-align: left;
     position: relative;
+    color: white;
   }
   .logo p {
     z-index: 0;
     margin: 0;
+    font-size: 30px;
     letter-spacing: 1.5px;
   }
   .logo img {
-    width: 1em;
-    height: 1em;
+    width: 55px;
+    height: 55px;
   }
   .nav-links a {
     text-decoration: none;
@@ -897,7 +888,8 @@ html {
   }
   .new-landing .new-landing-heading {
     z-index: 2;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     position: absolute;
     color: white;
     padding: 2em;

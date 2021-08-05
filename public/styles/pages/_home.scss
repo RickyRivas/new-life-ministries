@@ -74,7 +74,8 @@
 
         & .new-landing-heading {
             z-index: 2;
-            width: 1200px;
+            width: 100%;
+            max-width: 1200px;
             position: absolute;
             color: white;
             padding: 2em;
