@@ -59,6 +59,7 @@
                         font-size: 2em;
                         display: block;
                         position: relative;
+                        margin-bottom: 20px;
 
                         &::before {
                             content: '';
@@ -75,6 +76,10 @@
 
                     & p {
                         line-height: 2;
+                    }
+                    & .arrow-icon{
+                        width: 1.5em;
+                        height: 1.5em;
                     }
                 }
             }
@@ -139,6 +144,7 @@
                             height: 1em;
                             box-shadow: none;
                         }
+              
                     }
                 }
 
@@ -173,6 +179,11 @@
 
                     & p {
                         line-height: 2;
+                    }
+                     & .arrow-icon{
+                        width: 1.5em;
+                        height: 1.5em;
+                        display: none;
                     }
                 }
             }

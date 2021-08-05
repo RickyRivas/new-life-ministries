@@ -383,7 +383,7 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 80px;
+    height: 90px;
     width: 100vw;
     position: absolute;
     top: 0;
@@ -983,6 +983,10 @@ html {
   #videos .videos .video-box .video-text p {
     line-height: 2;
   }
+  #videos .videos .video-box .video-text .arrow-icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1095,6 +1099,11 @@ html {
   #videos .videos .video-box .video-text p {
     line-height: 2;
   }
+  #videos .videos .video-box .video-text .arrow-icon {
+    width: 1.5em;
+    height: 1.5em;
+    display: none;
+  }
 }
 
 @media (min-width: 0px) {
@@ -1131,28 +1140,34 @@ html {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: top;
-    background-image: url(/images/dday1.jpg);
-    background-position: center;
+    background-image: url(/images/dday121.jpg);
+    background-position: center 20%;
     background-size: cover;
     background-repeat: no-repeat;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   }
   #donations .donations .donations-gallery .right {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: right;
-    background-image: url(/images/day326.jpg);
+    background-image: url(/images/day2-1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   }
   #donations .donations .donations-gallery .left {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: left;
-    background-image: url(/images/dday135.jpg);
+    background-image: url(/images/dd1125.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   }
   #donations .donations .donations-text {
     display: -webkit-box;
@@ -1229,7 +1244,7 @@ html {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: top;
-    background-image: url(/images/dday1.jpg);
+    background-image: url(/images/dday121.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1238,7 +1253,7 @@ html {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: right;
-    background-image: url(/images/day326.jpg);
+    background-image: url(/images/day2-1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1247,7 +1262,7 @@ html {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: left;
-    background-image: url(/images/dday135.jpg);
+    background-image: url(/images/dd1125.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1328,7 +1343,7 @@ html {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: top;
-    background-image: url(/images/dday1.jpg);
+    background-image: url(/images/dday121.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1337,7 +1352,7 @@ html {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: right;
-    background-image: url(/images/day326.jpg);
+    background-image: url(/images/day2-1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1346,7 +1361,7 @@ html {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: left;
-    background-image: url(/images/dday135.jpg);
+    background-image: url(/images/dd1125.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1427,7 +1442,7 @@ html {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: top;
-    background-image: url(/images/dday1.jpg);
+    background-image: url(/images/dday121.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1436,7 +1451,7 @@ html {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: right;
-    background-image: url(/images/day326.jpg);
+    background-image: url(/images/day2-1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1445,7 +1460,7 @@ html {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: left;
-    background-image: url(/images/dday135.jpg);
+    background-image: url(/images/dd1125.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
