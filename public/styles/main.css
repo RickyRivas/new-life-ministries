@@ -921,7 +921,9 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -929,6 +931,8 @@ html {
   #videos .videos .video-box .img-a img {
     position: relative;
     max-width: 80%;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   }
   #videos .videos .video-box .img-a .play-a {
     position: absolute;
@@ -953,6 +957,8 @@ html {
   #videos .videos .video-box .img-a .play-a img {
     width: 1em;
     height: 1em;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   #videos .videos .video-box .video-text {
     display: -webkit-box;
@@ -973,9 +979,20 @@ html {
   #videos .videos .video-box .video-text h2 {
     color: #55c882;
     font-weight: bolder;
+    font-size: 2.5em;
+    display: block;
+    position: relative;
+  }
+  #videos .videos .video-box .video-text h2::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #55c882;
   }
   #videos .videos .video-box .video-text span {
     color: rgba(0, 0, 0, 0.8);
+    font-size: 1.5em;
   }
   #videos .videos .video-box .video-text p {
     line-height: 2;
