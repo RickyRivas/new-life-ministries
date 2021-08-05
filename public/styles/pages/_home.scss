@@ -1,4 +1,7 @@
 @media (min-width: 0px) {
+    body {
+        background-color: black;
+    }
     .new-landing {
         width: 100%;
         height: 90vh;
@@ -14,9 +17,9 @@
         background: url('/public/images/20944707.jpg') no-repeat;
         background-size: cover;
         transition: 1s opacity;
-        width: auto;
+        width: 100%;
         height: auto;
-        object-fit: contain;
+     
     }
 
     & .new-landing-heading {
@@ -32,7 +35,7 @@
         transform: translate(-50%, -50%);
 
         & h1 {
-            font-size: 45px;
+            font-size: 41px;
             margin-bottom: 15px;
             & span {
                 color: $primary-color;
@@ -40,15 +43,20 @@
         }
 
         & p {
-           font-size: 25px;
+           font-size: 1.2em;
            margin-bottom: 20px;
         }
 
         & :nth-child(3) {
             & .new-btn {
                 color: white;
+                cursor: pointer;
                 background-color: $primary-color;
                 padding: 10px 25px;
+                margin-right: 10px;
+                &:hover{
+                    opacity: .8;
+                }
             }
         }
     }
@@ -57,7 +65,7 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, .2);
+        background-color: rgba(0, 0, 0, .3);
         z-index: 1;
         top: 0;
         right: 0;

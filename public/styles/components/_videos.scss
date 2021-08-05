@@ -1,0 +1,136 @@
+@media (min-width: 0px) {
+    #videos {
+        width: 100%;
+        background-color: white;
+
+        & .videos {
+            width: 100%;
+            max-width: 1200px;
+
+            & .video-box {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                max-width: 504px;
+                margin: auto;
+
+                & .img-a {
+                    position: relative;
+                    & img {
+                        max-width: 100%;
+                    }
+                    & .play-a{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background-color: white;
+                        border-radius: 50%;
+                        height: 4em;
+                        width: 4em;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        & img {
+                            width: 1em;
+                            height: 1em;
+                        }
+                    }
+                }
+
+                & .video-text {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    padding: 2em;
+                    & h2 {
+                    }
+                    & span {
+                        color: rgba(0,0,0,.8);
+                    }
+                    & p {
+                        line-height: 2;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1024px){
+     #videos {
+        width: 100%;
+        background-color: white;
+
+        & .videos {
+            width: 100%;
+            max-width: 1200px;
+            padding: 2em;
+            margin: auto;
+            & *:nth-child(even){
+                .video-text{
+                    order: 2;
+                }
+            }
+
+            & .video-box {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                max-width: 1200px;
+                max-height: 504px;
+                margin: auto;
+                margin-bottom: 2em;
+
+                & .img-a {
+                    position: relative;
+                    display: flex;
+                    justify-self: center;
+                    align-items: center;
+                    & img {
+                        position: relative;
+                        max-width: 80%;
+                    }
+                    & .play-a{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background-color: white;
+                        border-radius: 50%;
+                        height: 4em;
+                        width: 4em;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        & img {
+                            width: 1em;
+                            height: 1em;
+                        }
+                    }
+                }
+
+                & .video-text {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    padding: 2em;
+                    height: 100%;
+                    & h2 {
+                        color: $primary-color;
+                        font-weight: bolder;
+                    }
+                    & span {
+                        color: rgba(0,0,0,.8);
+                    }
+                    & p {
+                        line-height: 2;
+                    }
+                }
+            }
+        }
+    }
+}
