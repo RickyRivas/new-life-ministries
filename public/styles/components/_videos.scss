@@ -49,7 +49,21 @@
                     flex-direction: column;
                     padding: 2em;
 
-                    & h2 {}
+                    & h2 {
+                        color: $primary-color;
+                        font-weight: bolder;
+                        font-size: 2em;
+                        display: block;
+                        position: relative;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 30px;
+                            height: 3px;
+                            background-color: $primary-color;
+                        }
+                    }
 
                     & span {
                         color: rgba(0, 0, 0, .8);
@@ -138,7 +152,8 @@
                         font-size: 2.5em;
                         display: block;
                         position: relative;
-                        &::before{
+
+                        &::before {
                             content: '';
                             position: absolute;
                             width: 50px;

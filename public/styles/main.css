@@ -879,6 +879,20 @@ html {
             flex-direction: column;
     padding: 2em;
   }
+  #videos .videos .video-box .video-text h2 {
+    color: #55c882;
+    font-weight: bolder;
+    font-size: 2em;
+    display: block;
+    position: relative;
+  }
+  #videos .videos .video-box .video-text h2::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #55c882;
+  }
   #videos .videos .video-box .video-text span {
     color: rgba(0, 0, 0, 0.8);
   }
