@@ -1,0 +1,123 @@
+// .top-link{
+//     display: none;
+// }
+// @media (max-width: 1024px){
+// .top-link {
+//   transition: all 0.25s ease-in-out;
+//   position: fixed;
+//   bottom: 0;
+//   right: 0;
+//   display: inline-flex;
+//   z-index: 2;
+//   cursor: pointer;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 1px;
+//   width: 100vw;
+//   height: 60px;
+//   background: #d8f3dc;
+
+//   &.show {
+//     visibility: visible;
+//     opacity: 1;
+//   }
+
+//   &.hide {
+//     visibility: hidden;
+//     opacity: 0;
+//   }
+//   &:hover {
+//     background-color: var(--standard-gold);
+
+//     svg {
+//       fill: #000000;
+//     }
+//   }
+// }
+// .payment-icon{
+//     height: 1.5em;
+// }
+// // Text meant only for screen readers.
+// .screen-reader-text {
+//   position: absolute;
+//   clip-path: inset(50%);
+//   margin: -1px;
+//   border: 0;
+//   padding: 0;
+//   width: 1px;
+//   height: 1px;
+//   overflow: hidden;
+//   word-wrap: normal !important;
+//   clip: rect(1px, 1px, 1px, 1px);
+
+//   &:focus {
+//     display: block;
+//     top: 5px;
+//     left: 5px;
+//     z-index: 100000; // Above WP toolbar
+//     clip-path: none;
+//     background-color: #eee;
+//     padding: 15px 23px 14px;
+//     width: auto;
+//     height: auto;
+//     text-decoration: none;
+//     line-height: normal;
+//     color: #444;
+//     font-size: 1em;
+//     clip: auto !important;
+//   }
+// }
+// .fixed-donate{
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     & > div {
+//         margin-left: 1em;
+//         text-decoration: none;
+//     }
+// }
+// a {
+//     text-decoration: none;
+// }
+// }
+// .standard-icon {
+//   width: 1.7em;
+//   height: 1.7em;
+//   margin: 0 0.7em;
+// }
+// landing-btn
+.landing-btn {
+  background-color: $green;
+  padding: .2em 2em;
+  margin-top: 1em;
+  position: relative;
+  z-index: 3;
+  color: white;
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -3;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    animation: pulse-animation 2s infinite;
+    display: block;
+  }
+
+  & span {
+    color: white;
+  }
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(162, 222, 208, 1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}

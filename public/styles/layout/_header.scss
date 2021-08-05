@@ -70,7 +70,7 @@
       z-index: 0;
       margin: 0;
       letter-spacing: 1.5px;
-      font-size: 18px;
+      font-size: 20px;
     }
 
     & img {
@@ -79,6 +79,17 @@
       margin-right: .2em;
     }
   }
+
+  nav.scroll {
+    background-color: $primary-color-light;
+    color: black;
+    transition: all .7s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .scroll-p {
+    color: black;
+    }
 
   .nav-links li {
     opacity: 1;
@@ -150,9 +161,7 @@
   }
 }
 
-@media (min-width: 768px) {
-  
-}
+@media (min-width: 768px) {}
 
 @media (min-width: 1024px) {
   nav {
@@ -449,7 +458,7 @@
 .hamburger-inner::after {
   width: 40px;
   height: 3px;
-  background-color: #fff;
+  background-color: black;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
