@@ -183,6 +183,7 @@
             margin: auto;
             height: 504px;
             grid-gap: 2em;
+            place-items: center;
 
             & .donations-gallery {
                 display: grid;
@@ -226,6 +227,7 @@
                 justify-content: space-around;
                 align-items: flex-start;
                 flex-direction: column;
+                height: 100%;
 
                 & .products {
                     display: grid;
