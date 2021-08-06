@@ -2,21 +2,25 @@
     #videos {
         width: 100%;
         background-color: white;
+         overflow: hidden;
 
         & .videos {
             width: 100%;
             max-width: 1200px;
 
             & .video-box {
+                position: relative;
                 width: 100%;
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr 1fr;
                 max-width: 504px;
                 margin: auto;
+                z-index: 1;
 
                 & .img-a {
                     position: relative;
+                    z-index: 2;
 
 
                     & img {
@@ -53,6 +57,8 @@
                     align-items: flex-start;
                     flex-direction: column;
                     padding: 2em;
+                    position: relative;
+                    z-index: 2;
 
                     & h2 {
                         color: $primary-color;
@@ -69,14 +75,28 @@
                             height: 3px;
                             background-color: $primary-color;
                         }
+
+                        &::after {
+                            content: attr(data-title);
+                            position: absolute;
+                            font-size: 4em;
+                            font-weight: bold;
+                            color: $light-gray;
+                            pointer-events: none;
+                            z-index: -1;
+                            top: 0;
+                            left: 0;
+                        }
                     }
 
                     & span {
                         color: rgba(0, 0, 0, .8);
+
                     }
 
                     & p {
                         line-height: 2;
+
                     }
 
                     & .arrow-icon {

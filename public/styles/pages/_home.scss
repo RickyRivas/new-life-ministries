@@ -48,6 +48,10 @@
         }
 
         & :nth-child(3) {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
             & .new-btn {
                 color: white;
                 cursor: pointer;
@@ -55,6 +59,8 @@
                 background-color: $primary-color;
                 padding: 10px 25px;
                 margin-right: 10px;
+                margin-bottom: 10px;
+                white-space: nowrap;
                 &:hover{
                     opacity: .8;
                 }
