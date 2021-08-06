@@ -1150,6 +1150,8 @@ html {
   #donations {
     width: 100%;
     background-color: #F7FFF7;
+    background-position: center;
+    background-size: cover;
   }
   #donations .donations {
     max-width: 1200px;
@@ -1349,6 +1351,9 @@ html {
     width: 100%;
     background-color: #F7FFF7;
     padding: 2em;
+    background-image: url(/public/images/greenbg1.jpg);
+    background-position: center;
+    background-size: cover;
   }
   #donations .donations {
     width: 100%;
@@ -1450,6 +1455,9 @@ html {
   #donations {
     width: 100%;
     background-color: #F7FFF7;
+    background-image: url(/public/images/greenbg1.jpg);
+    background-position: center;
+    background-size: cover;
     padding: 2em;
   }
   #donations .donations {
