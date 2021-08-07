@@ -166,31 +166,65 @@
     <!-- Contact Section Start -->
     <section id='contact' class='contact-section'>
       <div class='contact-container'>
-        <div class="contact-grid">
-          <div class='grid-item grid-item-1'>
-            <img src='images/email.svg' class='icon' alt='phone icon'>
-            <h2>Mailing Address</h2>
-            <p class='green'>New Life Ministries<br>P.O. Box 54522<br>Tulsa, Oklahoma, 74145</p>
-            <p></p>
+        <!-- Form -->
+        <form class='contact-form' name="contact" method="POST" data-netlify="true">
+          <div>
+            <h2>Leave us your info:</h2>
           </div>
-          <div class='grid-item grid-item-2'>
-            <img src='images/email2.svg' class='icon' alt='email icon'>
-            <h2>Email</h2>
-            <p>We have an active email if you'd like to message us directly.</p>
-            <p class='green'>NewLifeMinistries@info</p>
-          </div>
-          <div class='grid-item grid-item-3'>
-            <img src='images/globe.svg' class='icon' alt='globe icon'>
-            <h2>Social Media</h2>
-            <p>Click the icons to be redirected; Thanks for following.</p>
+          <p>
+            <label><input placeholder='First Name' type="text" name="first name" /></label>
+          </p>
+          <p>
+            <label> <input placeholder='Last Name' type="text" name="last name" /></label>
+          </p>
+          <p>
+            <label><input placeholder='Email Address' type="email" name="email" /></label>
+          </p>
+          <p>
+            <label><textarea placeholder='Enter your message' name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+        <!-- Form -->
+        <div>
+          <div class='contact-info'>
             <div>
-              <a href='https://www.instagram.com/offeringnewlife/'><img src='images/instagram.svg' class='standard-icon'
-                  alt='ig icon'></a>
-              <a href='https://www.facebook.com/offeringnewlife'><img src='images/facebook.svg' class='standard-icon'
-                  alt='fb icon'></a>
+              <h2>Contact Information:</h2>
+            </div>
+            <div class='flex'>
+              <img src='images/email3.svg' class='standard-icon' alt='email icon'>
+              <p>NewLifeMinistries@info</p>
+            </div>
+            <div class='flex'>
+              <img src='images/call.svg' class='standard-icon' alt='email icon'>
+              <p>(918) XXX-XXXX</p>
+            </div>
+            <div class='flex'>
+              <img src='images/mail-send.svg' class='standard-icon' alt='mail send'>
+              <div>
+                <p>New Life Ministries</p>
+                <p>P.O. Box 54522</p>
+                <p>Tulsa, Oklahoma, 74145</p>
+              </div>
+            </div>
+          </div>
+          <div class='contact-info'>
+            <div>
+              <h2>Social Media:</h2>
+            </div>
+            <div class='flex'>
+              <img src='images/facebook.svg' class='standard-icon' alt='email icon'>
+              <p>Facebook</p>
+            </div>
+            <div class='flex'>
+              <img src='images/instagram.svg' class='standard-icon' alt='email icon'>
+              <p>Instagram</p>
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
     <!-- Contact Section End -->
