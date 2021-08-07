@@ -99,6 +99,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    font-size: 1.2em;
 
     &::after {
       content: url(/images/left-chevron.svg);
@@ -229,6 +230,7 @@
     justify-content: flex-end;
     align-items: center;
     opacity: 1;
+    font-size: 1em;
 
     &::after {
       content: '';
@@ -352,6 +354,7 @@
     align-items: center;
     opacity: 1;
     white-space: nowrap;
+    font-size: 1em;
 
 
     &::after {
