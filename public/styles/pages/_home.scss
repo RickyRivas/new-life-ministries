@@ -11,15 +11,15 @@
 
     #videoBG {
         position: absolute;
+        top: 0;
         left: 50%;
         z-index: -100;
         transform: translateX(-50%);
         background: url('/public/images/20944707.jpg') no-repeat;
-        background-size: cover;
+        object-fit: cover;
         transition: 1s opacity;
         width: 100%;
-        height: auto;
-     
+        height: 100%;
     }
 
     & .new-landing-heading {
@@ -135,16 +135,16 @@
     }
 }
 
-@media (min-aspect-ratio: 16/9) {
-    #videoBG {
-        width: 100%;
-        height: auto;
-    }
-}
+// @media (min-aspect-ratio: 16/9) {
+//     #videoBG {
+//         width: 100%;
+//         height: auto;
+//     }
+// }
 
-@media (max-aspect-ratio: 16/9) {
-    #videoBG {
-        width: auto;
-        height: 100%;
-    }
-}
+// @media (max-aspect-ratio: 16/9) {
+//     #videoBG {
+//         width: auto;
+//         height: 100%;
+//     }
+// }

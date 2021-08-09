@@ -195,11 +195,11 @@
   }
 
   nav.scroll {
-    background-color: #d8f3dc;
-    color: #000;
+    background-color:transparent;
+    color: white;
     transition: all .7s;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    display: none;
+    box-shadow: unset;
+
   }
 
   .nav-links {
@@ -267,6 +267,10 @@
     }
   }
 
+  .scroll-p {
+    color: white;
+    }
+
   .nav-links a {
     text-decoration: none;
   }
@@ -315,14 +319,6 @@
       background-color: transparent;
 
     }
-  }
-
-  nav.scroll {
-    background-color: #d8f3dc;
-    color: #000;
-    transition: all .7s;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    display: none;
   }
 
   .nav-links {
