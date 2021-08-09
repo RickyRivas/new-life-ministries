@@ -231,6 +231,7 @@ html {
 
 @media (min-width: 1024px) {
   nav {
+    position: absolute;
     z-index: 1000;
     display: -webkit-box;
     display: -ms-flexbox;

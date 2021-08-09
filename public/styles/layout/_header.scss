@@ -166,6 +166,7 @@
 
 @media (min-width: 1024px) {
   nav {
+    position: absolute;
     z-index: 1000;
     display: flex;
     justify-content: center;
