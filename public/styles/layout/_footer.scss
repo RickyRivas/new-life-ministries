@@ -16,13 +16,13 @@
     }
 
     & a {
-      color: currentColor;
+      color: #ced4da;
       text-decoration: none;
     }
 
     & .col {
       text-align: left;
-      margin-bottom: 2em;
+      margin-bottom: 3em;
       font-weight: 100;
 
       & .logo-footer {
@@ -34,12 +34,14 @@
         margin-bottom: .5em;
         font-size: 1.2em;
         letter-spacing: 3px;
-        font-weight: 100;
-        color: #ccffcc;
+        font-weight: lighter;
+        color: white;
+        padding-bottom: 10px;
+        border-bottom: 1px solid white;
       }
 
       & p {
-        color: white;
+        color: #ced4da;
       }
 
       & ul {
@@ -47,13 +49,13 @@
         width: 100%;
 
         & li {
-          color: $cultured;
+          color: #ced4da;
           font-size: .9em;
           margin-bottom: .5em;
           cursor: pointer;
 
           &:hover {
-            color: $cadetblue;
+            color: white;
           }
         }
       }
@@ -63,7 +65,7 @@
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      color: white;
+      color: #ced4da;
       flex-direction: column;
 
       & .flex {
@@ -71,6 +73,12 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 1em;
+        color: #ced4da;
+      }
+      & a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
 
@@ -140,7 +148,7 @@
         text-align: left;
 
         & li {
-          color: $cultured2;
+          color: #ced4da;
           font-size: .9em;
           margin-bottom: .5em;
         }
@@ -193,13 +201,16 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        & img {
+          width: 1.5em;
+        }
       }
 
       & .flex {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
+        color: #ced4da;
         margin-right: 1em;
       }
 
@@ -209,9 +220,9 @@
         text-align: left;
 
         & li {
-          color: $cultured2;
+          color: #ced4da;
           font-size: .9em;
-          margin-bottom: .5em;
+          margin-bottom: 1em;
         }
       }
     }

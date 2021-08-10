@@ -89,7 +89,7 @@
 
   .scroll-p {
     color: black;
-    }
+  }
 
   .nav-links li {
     opacity: 1;
@@ -187,6 +187,11 @@
 
     }
 
+    & .is-active {
+      box-shadow: unset;
+      z-index: 100;
+    }
+
     .nav-links li a {
       color: white;
       text-decoration: none;
@@ -196,7 +201,7 @@
   }
 
   nav.scroll {
-    background-color:transparent;
+    background-color: transparent;
     color: white;
     transition: all .7s;
     box-shadow: unset;
@@ -270,7 +275,7 @@
 
   .scroll-p {
     color: white;
-    }
+  }
 
   .nav-links a {
     text-decoration: none;
