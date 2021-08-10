@@ -1638,6 +1638,7 @@ html {
     border: 0;
     margin-bottom: 20px;
     padding: 20px;
+    resize: none;
   }
   .contact-section .contact-container .contact-form input[type='text']:active,
   .contact-section .contact-container .contact-form input[type='email']:active,
@@ -1650,6 +1651,9 @@ html {
     padding: 10px 30px;
     color: white;
     width: 100%;
+  }
+  .contact-section .contact-container .contact-form button:hover {
+    opacity: .8;
   }
   .contact-section .contact-container .contact-divs {
     width: 100%;
