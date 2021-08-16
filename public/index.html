@@ -14,7 +14,14 @@
   <title>New Life Ministries</title>
 </head>
 
-<body>
+<body data-barba='wrapper'>
+  <ul class="transition">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
   <!-- Navigation Start -->
   <nav id='navbar'>
     <div class='nav-wrapper'>
@@ -40,16 +47,16 @@
   </nav>
   <!-- Navigation End -->
   <!-- Main Container Start -->
-  <main>
+  <main data-barba="container" data-barba-namespace="home">
     <!-- New Landing Concept Start -->
     <section class='new-landing'>
       <video id="videoBG" poster="images/msday137.jpg" autoplay loop muted playsinline>
         <source src="videos/landingvb.mp4" type="video/mp4">
       </video>
       <div class='new-landing-heading'>
-        <h1>Welcome to <span>La Laja.</span></h1>
-        <p>Reaching the unchurched people groups of the world.</p>
-        <div>
+        <h1 class='anim1'>Welcome to <span>La Laja.</span></h1>
+        <p class='anim1'>Reaching the unchurched people groups of the world.</p>
+        <div class='anim1'>
           <a href='#donations' class='new-btn'>Donate Now</a>
           <a href='#contact' class='new-btn'>Contact Us</a>
         </div>
@@ -374,7 +381,12 @@
     loadProducts();
   </script>
   <!-- Scripts Start -->
+  <!-- JS Animations -->
+   <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
   <script src='scripts/scripts.js'></script>
+  <script src='scripts/transitions.js'></script>
+
 </body>
 
 </html>

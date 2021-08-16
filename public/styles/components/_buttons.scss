@@ -1,5 +1,25 @@
-.standard-icon{
+.standard-icon {
     width: 1.5em;
     height: 1.5em;
     margin-right: .3em;
+}
+
+.transition {
+    display: flex;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    pointer-events: none;
+    list-style: none;
+    z-index: 100000;
+
+    & li {
+        transform: scaleY(1);
+        background: white;
+        width: 20%;
+        z-index: 100;
+    }
 }

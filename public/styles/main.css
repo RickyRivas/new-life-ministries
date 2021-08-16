@@ -913,6 +913,29 @@ html {
   margin-right: .3em;
 }
 
+.transition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  pointer-events: none;
+  list-style: none;
+  z-index: 100000;
+}
+
+.transition li {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  background: white;
+  width: 20%;
+  z-index: 100;
+}
+
 @media (min-width: 0px) {
   #videos {
     width: 100%;
