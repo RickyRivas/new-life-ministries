@@ -72,6 +72,7 @@
 
            const form = container.querySelector('form');
            // Handle submit 
+           console.log(product)
            form.addEventListener('submit', handleSubmit);
 
            products.appendChild(container);
