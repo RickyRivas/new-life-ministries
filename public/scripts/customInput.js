@@ -20,9 +20,9 @@ async function handleSubmit(e) {
         currency: "USD"
     }
     // new form 
-    const form = new FormData(event.target);
+    const form = new FormData(product);
     const data = {
-        sku: form.get('sku'),
+        sku: form.get(product.sku),
         //quantity: Number(form.get('quantity')),
     };
 
