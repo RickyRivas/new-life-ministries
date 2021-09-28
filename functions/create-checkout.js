@@ -41,7 +41,7 @@ exports.handler = async (event) => {
      * https://docs.netlify.com/configure-builds/environment-variables/
      */
     success_url: `${process.env.URL}/success.html`,
-    cancel_url: process.env.URL,
+    cancel_url: `${process.env.URL}/cancel.html`,
     line_items: [
       {
         price_data: {
