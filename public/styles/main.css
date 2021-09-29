@@ -1304,6 +1304,7 @@ html {
     padding: 10px 30px;
     color: white;
     border: 0;
+    cursor: pointer;
   }
   #donations .donations .donations-text .products .product button :hover {
     opacity: .8;
