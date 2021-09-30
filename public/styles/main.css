@@ -2254,7 +2254,7 @@ html {
     height: 768px;
     position: relative;
     overflow: hidden;
-    padding: 2em;
+    padding: 0em;
   }
   #videoBG {
     position: absolute;
