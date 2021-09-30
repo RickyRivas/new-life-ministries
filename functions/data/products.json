@@ -1,24 +1,24 @@
 [
   {
     "sku": "5",
-    "name": "$5",
-    "amount": 500,
+    "name": "$50",
+    "amount": 5000,
     "currency": "USD",
     "description": "Give a gift of $5 to New Life Ministries",
     "image": "https://drive.google.com/uc?export=view&id=1H56UtNBx8tqvZ7SBxTFQt6X840bAOfXE"
   },
   {
     "sku": "25",
-    "name": "$25",
-    "amount": 2500,
+    "name": "$100",
+    "amount": 10000,
     "currency": "USD",
     "description": "Give a gift of $25 to New Life Ministries",
     "image": "https://drive.google.com/uc?export=view&id=1H56UtNBx8tqvZ7SBxTFQt6X840bAOfXE"
   },
   {
     "sku": "50",
-    "name": "$50",
-    "amount": 5000,
+    "name": "$250",
+    "amount": 25000,
     "currency": "USD",
     "description": "Give a gift of $50 to New Life Ministries",
     "image": "https://drive.google.com/uc?export=view&id=1H56UtNBx8tqvZ7SBxTFQt6X840bAOfXE"
