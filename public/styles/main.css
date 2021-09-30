@@ -1,4 +1,6 @@
 /* Roots */
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +10,7 @@
 
 html {
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media screen and (min-width: 320px) {
@@ -934,6 +936,35 @@ html {
   background: white;
   width: 20%;
   z-index: 100;
+}
+
+@media (min-width: 0px) {
+  .fixed-btns {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    right: 0;
+    top: 40%;
+    -webkit-transform-origin: 90% 40%;
+            transform-origin: 90% 40%;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+    z-index: 9999;
+  }
+  .fixed-btns a {
+    color: white;
+    background-color: #55c882;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-right: .5em;
+  }
 }
 
 @media (min-width: 0px) {
@@ -2036,6 +2067,9 @@ html {
 }
 
 @media (min-width: 0px) {
+  main {
+    position: relative;
+  }
   body {
     background-color: black;
   }
@@ -2076,91 +2110,11 @@ html {
             transform: translate(-50%, -50%);
   }
   .new-landing-heading h1 {
-    font-size: 41px;
-    margin-bottom: 15px;
-  }
-  .new-landing-heading h1 span {
-    color: #55c882;
-  }
-  .new-landing-heading p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-  }
-  .new-landing-heading :nth-child(3) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .new-landing-heading :nth-child(3) .new-btn {
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-    background-color: #55c882;
-    padding: 10px 25px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    white-space: nowrap;
-  }
-  .new-landing-heading :nth-child(3) .new-btn:hover {
-    opacity: .8;
+    font-size: 2em;
+    margin-bottom: 1em;
+    font-family: 'Cookie', cursive;
   }
   .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .new-landing {
-    width: 100vw;
-    position: relative;
-    height: 768px;
-  }
-  .new-landing .new-landing-heading {
-    z-index: 2;
-    width: 100%;
-    max-width: 1200px;
-    position: absolute;
-    color: white;
-    padding: 2em;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-  }
-  .new-landing .new-landing-heading h1 {
-    font-size: 4em;
-  }
-  .new-landing .new-landing-heading h1 span {
-    color: #55c882;
-  }
-  .new-landing .new-landing-heading p {
-    margin-bottom: 1.5em;
-    font-size: 1.5em;
-    width: 500px;
-  }
-  .new-landing .new-landing-heading :nth-child(3) .new-btn {
-    text-decoration: none;
-    color: white;
-    background-color: #55c882;
-    padding: .5em 1.5em;
-    margin-right: .5em;
-  }
-  .new-landing .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
