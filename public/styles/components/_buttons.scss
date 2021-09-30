@@ -32,14 +32,14 @@
         align-items: center;
         right: 0;
         top: 40%;
-        transform-origin: 90% 40%;
+        transform-origin: 90% 30%;
         transform: rotate(270deg);
         z-index: 9999;
 
         a {
             color: white;
             background-color: $primary-color;
-            padding: 10px 20px;
+            padding: 5px 20px;
             text-decoration: none;
             margin-right: .5em;
         }
