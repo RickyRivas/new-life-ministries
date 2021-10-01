@@ -5,9 +5,9 @@ const stripe = require('stripe')(`${process.env.STRIPE_SECRET_KEY}`, {
 });
 
 //
-exports.handler = async (e) => {
+exports.handler = async (event) => {
     // grab the imported product
-    const product = JSON.parse(e.body)
+    const product = JSON.parse(event.body)
 
     // create session
     const session = await stripe.checkout.sessions.create({
@@ -32,15 +32,16 @@ exports.handler = async (e) => {
                 },
             },
             quantity: validatedQuantity,
-        }, ],
+        },],
         metadata: {
             items: JSON.stringify([{
                 sku: product.sku,
                 name: product.name,
 
-            }, ]),
+            },]),
         },
-    })
+    });
+
     return {
         statusCode: 200,
         body: JSON.stringify({
