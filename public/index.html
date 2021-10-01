@@ -202,6 +202,13 @@
           <button>Submit custom amount</button>
           </form> -->
           <!-- Custom Input -->
+          <section>
+            <form class='custom-payment-form'>
+
+              <input type="number" class='custom-input'>
+              <button>Donate <span class='payment-output'></span></button>
+            </form>
+          </section>
         </div>
       </div>
     </section>
@@ -331,11 +338,10 @@
       </form>
     </div>
   </template>
-
   <script src="https://js.stripe.com/v3/"></script>
   <script src='./scripts/stripe.js'></script>
   <script src='scripts/scripts.js'></script>
-  <!-- <script src='scripts//customInput.js'></script> -->
+  <script src='scripts/customInput.js'></script>
 </body>
 
 </html>
