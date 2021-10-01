@@ -25,7 +25,7 @@ form.addEventListener('submit', async (e) => {
     }
  
     // Create Checkout 
-    const response = await fetch('/.netlify/functions/create-checkout', {
+    const response = await fetch('/.netlify/functions/custom-checkout', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

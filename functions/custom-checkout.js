@@ -4,9 +4,7 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY, {
     maxNetworkRetries: 2,
 });
 
-
 //
-
 exports.handler = async (e) => {
     // grab the imported product
     const importedProduct = e.body
