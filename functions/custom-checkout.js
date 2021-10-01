@@ -28,7 +28,6 @@ exports.handler = async (event) => {
                 unit_amount: product.amount,
                 product_data: {
                     name: product.name,
-
                     images: [product.image],
                 },
             }
