@@ -31,8 +31,7 @@ exports.handler = async (event) => {
 
                     images: [product.image],
                 },
-            },
-            quantity: validatedQuantity,
+            }
             },
         ],
         metadata: {
