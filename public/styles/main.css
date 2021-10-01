@@ -1142,14 +1142,14 @@ html {
     margin: auto;
     z-index: 1;
   }
-  #videos .videos .video-box .img-a {
-    position: relative;
+  #videos .videos .video-box .video-thumbnail {
     z-index: 2;
+    position: relative;
   }
-  #videos .videos .video-box .img-a img {
+  #videos .videos .video-box .video-thumbnail img {
     max-width: 100%;
   }
-  #videos .videos .video-box .img-a .play-a {
+  #videos .videos .video-box .video-thumbnail .play {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1169,10 +1169,10 @@ html {
         -ms-flex-align: center;
             align-items: center;
   }
-  #videos .videos .video-box .img-a .play-a:hover {
+  #videos .videos .video-box .video-thumbnail .play:hover {
     background-color: #55c882;
   }
-  #videos .videos .video-box .img-a .play-a img {
+  #videos .videos .video-box .video-thumbnail .play img {
     width: 1em;
     height: 1em;
   }
@@ -1300,8 +1300,10 @@ html {
     margin: auto;
     margin-bottom: 2em;
   }
-  #videos .videos .video-box .img-a {
+  #videos .videos .video-box .video-thumbnail {
+    z-index: 2;
     position: relative;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1312,13 +1314,12 @@ html {
         -ms-flex-align: center;
             align-items: center;
   }
-  #videos .videos .video-box .img-a img {
-    position: relative;
-    max-width: 80%;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  #videos .videos .video-box .video-thumbnail img {
+    max-width: 100%;
+    border-radius: 50%;
+    max-width: 450px;
   }
-  #videos .videos .video-box .img-a .play-a {
+  #videos .videos .video-box .video-thumbnail .play {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1338,11 +1339,13 @@ html {
         -ms-flex-align: center;
             align-items: center;
   }
-  #videos .videos .video-box .img-a .play-a img {
+  #videos .videos .video-box .video-thumbnail .play:hover {
+    background-color: #55c882;
+  }
+  #videos .videos .video-box .video-thumbnail .play img {
     width: 1em;
     height: 1em;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    border-radius: unset;
   }
   #videos .videos .video-box .video-text {
     display: -webkit-box;
@@ -2219,6 +2222,58 @@ html {
 }
 
 @media (min-width: 0px) {
+  .project-intro {
+    position: relative;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50vh;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/images/msday326.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/msday326.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .project-intro :nth-child(1) {
+    color: white;
+    font-family: "cookie", cursive;
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-intro {
+    position: relative;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 600px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/images/msday326.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/msday326.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .project-intro :nth-child(1) {
+    color: white;
+    font-family: "cookie", cursive;
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 0px) {
   main {
     position: relative;
   }
@@ -2285,6 +2340,7 @@ html {
   .project-dir h2 {
     margin-right: .5em;
     font-family: 'cookie', cursive;
+    font-size: 2em;
   }
   .project-dir img {
     width: 1em;
@@ -2372,6 +2428,7 @@ html {
   }
   .project-dir h2 {
     margin-right: .5em;
+    font-size: 2.5em;
     font-family: 'cookie', cursive;
   }
   .project-dir img {

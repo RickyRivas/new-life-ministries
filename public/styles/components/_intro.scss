@@ -1,0 +1,36 @@
+@media (min-width: 0px) {
+    .project-intro {
+        position: relative;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(/images/msday326.jpg);
+        background-size: cover;
+        background-position: center;
+         :nth-child(1){
+             color: white;
+             font-family: "cookie", cursive;
+             font-size: 1.8em;
+         }
+    }
+}
+@media (min-width: 768px) {
+    .project-intro {
+        position: relative;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(/images/msday326.jpg);
+        background-size: cover;
+        background-position: center;
+         :nth-child(1){
+             color: white;
+             font-family: "cookie", cursive;
+             font-size: 1.8em;
+         }
+    }
+}
