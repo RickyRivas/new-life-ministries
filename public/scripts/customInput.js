@@ -3,10 +3,10 @@ const input = document.querySelector('.custom-input')
 const output = document.querySelector('.payment-output')
 
 
-form.addEventListener('submit', async (e) => {
+form.addEventListener('submit', async (event) => {
     
     // Prev Def
-    e.preventDefault();
+    event.preventDefault();
 
     // grab the user custom amount
     output.textContent = input.value;
