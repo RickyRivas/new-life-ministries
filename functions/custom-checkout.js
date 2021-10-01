@@ -7,7 +7,7 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY, {
 //
 exports.handler = async (e) => {
     // grab the imported product
-    const importedProduct = e.body
+    const product = JSON.parse(e.body)
 
     // create session
     const session = await stripe.checkout.sessions.create({

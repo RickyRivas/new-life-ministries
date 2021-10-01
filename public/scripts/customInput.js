@@ -15,7 +15,7 @@ form.addEventListener('submit', async (e) => {
     const formattedValue = input.value * 100
 
     // create object upon click event 
-    const newProduct = {
+    const product = {
         sku: "Custom Amount",
         name: "Custom Amount",
         amount: formattedValue,
@@ -30,7 +30,7 @@ form.addEventListener('submit', async (e) => {
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(newProduct),
+        body: JSON.stringify(product),
     }).then((res) => res.json());
 
     // Init Stripe with API Publishable key
