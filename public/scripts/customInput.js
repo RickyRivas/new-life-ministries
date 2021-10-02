@@ -35,6 +35,7 @@ form.addEventListener('submit', async (event) => {
     console.log('=>Promise')
     // Init Stripe with API Publishable key
     const stripe = Stripe(response.publishableKey);
+    console.log(response.publishableKey)
 
     // Error Handling
     const { error } = await stripe.redirectToCheckout({
