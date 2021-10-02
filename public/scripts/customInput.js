@@ -26,14 +26,14 @@ form.addEventListener('submit', async (event) => {
 
     // create object upon click event 
     const product = {
-        sku: `Give a gift of ${ input.value }`,
-        name: `Give a gift of ${ input.value }`,
+        sku: `Give a gift of $${ input.value }`,
+        name: `Give a gift of $${ input.value }`,
         amount: formattedValue,
         currency: "USD",
-        description: `Give a gift of ${ input.value } to New Life Ministries`,
+        description: `Give a gift of $${ input.value } to New Life Ministries`,
         image: "https://drive.google.com/uc?export=view&id=1H56UtNBx8tqvZ7SBxTFQt6X840bAOfXE"
     }
-    console.log("=> product", product)
+
     // Create Checkout 
     const response = await fetch('/.netlify/functions/custom-checkout', {
         method: 'POST',
@@ -42,9 +42,8 @@ form.addEventListener('submit', async (event) => {
         },
         body: JSON.stringify(product),
     }).then((res) => res.json());
-    console.log('=>Promise', response)
+    
     // Init Stripe with API Publishable key
-    console.log(response.publishableKey)
     const stripe = Stripe(response.publishableKey);
 
 
