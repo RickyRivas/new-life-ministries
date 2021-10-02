@@ -7,7 +7,11 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY, {
 //
 exports.handler = async (event) => {
     // grab the imported product
-    const product = JSON.parse(event.body)
+    const { amount, name, sku, image, currency, description } = JSON.parse(event.body);
+
+    const newProduct = {
+        name, amount, sku, image, currency, description
+    }
     
     // create session
     const session = await stripe.checkout.sessions.create({
@@ -25,18 +29,18 @@ exports.handler = async (event) => {
             {
             price_data: {
                 currency: 'usd',
-                unit_amount: product.amount,
+                unit_amount: newProduct.amount,
                 product_data: {
-                    name: product.name,
-                    images: [product.image],
+                    name: newProduct.name,
+                    images: [newProduct.image],
                 },
             }
             },
         ],
         metadata: {
             items: JSON.stringify([{
-                sku: product.sku,
-                name: product.name,
+                sku: newProduct.sku,
+                name: newProduct.name,
 
             },]),
         },
