@@ -1,6 +1,6 @@
 const form = document.querySelector('.custom-payment-form');
 const input = document.querySelector('.custom-input')
-const output = document.querySelector('.payment-output')
+// const output = document.querySelector('.payment-output')
 const errorOutput = document.querySelector('.validation')
 
 
@@ -10,7 +10,7 @@ form.addEventListener('submit', async (event) => {
     event.preventDefault();
 
     // grab the user custom amount
-    output.textContent = input.value;
+    // output.textContent = input.value;
 
     // Number Input Validation
     if (input.value <= 0) {
@@ -42,7 +42,7 @@ form.addEventListener('submit', async (event) => {
         },
         body: JSON.stringify(product),
     }).then((res) => res.json());
-    
+
     // Init Stripe with API Publishable key
     const stripe = Stripe(response.publishableKey);
 
