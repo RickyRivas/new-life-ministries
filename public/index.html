@@ -47,6 +47,24 @@
   <!-- Navigation End -->
   <!-- Main Container Start -->
   <main>
+    <!-- donate popup -->
+        <div class='donate-popup-overlay'>
+        <div class='donate-popup-content'>
+             <span class='close-popup'>X</span>
+          <!-- Custom Input -->
+          <section id='custom-payment'>
+            <p>Enter your custom amount.</p>
+            <form action="/.netlify/functions/custom-checkout" method="post" class='custom-payment-form' min="10.00"
+              step="0.01" max="999000" value="00.00">
+              <input type="number" class='custom-input' placeholder="100.00">
+              <button>Donate</button>
+              <p class='validation'></p>
+            </form>
+          </section>
+          <!-- Custom Input -->
+        </div>
+      </div>
+      <!-- donate popup -->
     <div class='fixed-btns'>
       <a href="#donations">Donate</a>
       <a href="#contact">Contact</a>
@@ -70,7 +88,7 @@
     <div class='project-intro'>
       <div>
         <h2>Project La Laja</h2>
-     </div>
+      </div>
     </div>
     <!-- Project Intro -->
     <!-- Videos Start -->
@@ -190,23 +208,31 @@
         </div>
         <div class='donations-text'>
           <div>
-          <h2>Make a donation today!</h2>
-          <p>Make an impact today by donating conviently with Apple Pay and Google Pay.</p>
-            </div>
+            <h2>Make a donation today!</h2>
+            <p>Make an impact today by donating conviently with Apple Pay and Google Pay.</p>
+          </div>
           <!-- Products Inject -->
           <section class="products">
+            <div class="product">
+              <h2>other</h2>
+              <form class='other-popup'>
+                <input type="hidden" name="sku" value="" />
+                <button type="submit">Custom</button>
+              </form>
+            </div>
           </section>
           <!-- Products Inject -->
           <!-- Custom Input -->
-           <section id='custom-payment'>
-             <p>Or Custom Amount</p>
-            <form action="/.netlify/functions/custom-checkout" method="post" class='custom-payment-form' min="10.00" step="0.01" max="999000" value="00.00">
+          <!-- <section id='custom-payment'>
+            <p>Or Custom Amount</p>
+            <form action="/.netlify/functions/custom-checkout" method="post" class='custom-payment-form' min="10.00"
+              step="0.01" max="999000" value="00.00">
               <input type="number" class='custom-input' placeholder="100.00">
               <button>Donate</button>
               <p class='validation'></p>
             </form>
-          </section>
-            <!-- Custom Input -->
+          </section> -->
+          <!-- Custom Input -->
         </div>
       </div>
     </section>

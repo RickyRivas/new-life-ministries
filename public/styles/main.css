@@ -1108,7 +1108,7 @@ html {
             transform-origin: 90% 30%;
     -webkit-transform: rotate(270deg);
             transform: rotate(270deg);
-    z-index: 9999;
+    z-index: 9997;
   }
   .fixed-btns a {
     color: white;
@@ -1117,6 +1117,52 @@ html {
     text-decoration: none;
     margin-right: .5em;
   }
+}
+
+.donate-popup-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9999;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.donate-popup-overlay .donate-popup-content {
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 500px;
+  height: 50vh;
+  z-index: 9999;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.donate-popup-overlay .donate-popup-content .close-popup {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
 }
 
 @media (min-width: 0px) {

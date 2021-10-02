@@ -61,3 +61,18 @@ form.addEventListener('submit', async (event) => {
         console.error(error);
     }
 })
+
+// donation popup 
+
+const popupOverlay = document.querySelector('.donate-popup-overlay');
+const closePopup = document.querySelector('.close-popup');
+const popupTrigger = document.querySelector('.other-popup');
+
+// trigger popup
+popupTrigger.addEventListener('submit', () => {
+    popupOverlay.style.display = 'flex';
+})
+// close popup 
+closePopup.addEventListener('click', () => {
+    popupOverlay.style.display = 'none';
+})
