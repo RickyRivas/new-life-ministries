@@ -1120,7 +1120,7 @@ html {
 }
 
 .donate-popup-overlay {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -1132,12 +1132,12 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1em;
 }
 
 .donate-popup-overlay .donate-popup-content {
+  position: relative;
   background-color: white;
-  position: fixed;
-  top: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1147,15 +1147,17 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  border-radius: 1em;
+  padding: 1em;
   width: 100%;
   max-width: 500px;
   height: 50vh;
+  max-height: 500px;
   z-index: 9999;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-animation: opacityPopup .7s;
+          animation: opacityPopup .7s;
 }
 
 .donate-popup-overlay .donate-popup-content .close-popup {
@@ -1163,6 +1165,80 @@ html {
   top: 1em;
   right: 1em;
   cursor: pointer;
+}
+
+.donate-popup-overlay #custom-payment {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.donate-popup-overlay #custom-payment p {
+  margin-bottom: 1em;
+}
+
+.donate-popup-overlay #custom-payment .custom-payment-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35px;
+}
+
+.donate-popup-overlay #custom-payment .custom-payment-form .custom-input {
+  width: 100%;
+  margin-right: 1em;
+  font-size: 1em;
+  height: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: unset;
+}
+
+.donate-popup-overlay #custom-payment .custom-payment-form button {
+  background-color: #55c882;
+  padding: 10px 30px;
+  color: white;
+  border: 0;
+}
+
+.donate-popup-overlay #custom-payment .custom-payment-form .validation {
+  display: none;
+}
+
+@-webkit-keyframes opacityPopup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacityPopup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 0px) {
