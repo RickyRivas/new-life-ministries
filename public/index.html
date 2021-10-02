@@ -189,24 +189,24 @@
           <div class='right'></div>
         </div>
         <div class='donations-text'>
+          <div>
           <h2>Make a donation today!</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati animi laboriosam distinctio. for your
-            convenience, we also can take donations via Apple Pay or Google Pay.</p>
+          <p>Make an impact today by donating conviently with Apply Pay and Google Pay.</p>
+            </div>
           <!-- Products Inject -->
           <section class="products">
           </section>
           <!-- Products Inject -->
           <!-- Custom Input -->
-          <!-- <form class='custom-input-form' >
-          <input class='custom-amount' type="number" type="number" min="0.01" step="0.01" max="2500" value="00.00">
-          <button>Submit custom amount</button>
-          </form> -->
-           <section>
-            <form action="/.netlify/functions/custom-checkout" method="post" class='custom-payment-form'>
-              <input type="number" class='custom-input'>
+           <section id='custom-payment'>
+             <p>Or Custom Amount</p>
+            <form action="/.netlify/functions/custom-checkout" method="post" class='custom-payment-form' min="10.00" step="0.01" max="999000" value="00.00">
+              <input type="number" class='custom-input' placeholder="100.00">
               <button>Donate <span class='payment-output'></span></button>
+              <p class='validation'></p>
             </form>
           </section>
+            <!-- Custom Input -->
         </div>
       </div>
     </section>

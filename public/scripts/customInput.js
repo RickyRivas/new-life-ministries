@@ -1,29 +1,39 @@
 const form = document.querySelector('.custom-payment-form');
 const input = document.querySelector('.custom-input')
 const output = document.querySelector('.payment-output')
+const errorOutput = document.querySelector('.validation')
 
 
 form.addEventListener('submit', async (event) => {
-    
+
     // Prev Def
     event.preventDefault();
 
     // grab the user custom amount
     output.textContent = input.value;
 
+    // Number Input Validation
+    if (input.value <= 0) {
+        errorOutput.textContent = "Please enter a valid amount. minimum of $1"
+        errorOutput.style.display = 'block';
+        errorOutput.style.color = 'Red'
+    } else {
+        errorOutput.style.display = 'none'
+    }
+
     // format the value to pennies so Stripe can accept the value
     const formattedValue = input.value * 100
 
     // create object upon click event 
     const product = {
-        sku: "Custom Amount",
-        name: "Custom Amount",
+        sku: `Give a gift of ${ input.value }`,
+        name: `Give a gift of ${ input.value }`,
         amount: formattedValue,
         currency: "USD",
         description: `Give a gift of ${ input.value } to New Life Ministries`,
         image: "https://drive.google.com/uc?export=view&id=1H56UtNBx8tqvZ7SBxTFQt6X840bAOfXE"
     }
-     console.log("=> product", product)
+    console.log("=> product", product)
     // Create Checkout 
     const response = await fetch('/.netlify/functions/custom-checkout', {
         method: 'POST',
@@ -36,17 +46,19 @@ form.addEventListener('submit', async (event) => {
     // Init Stripe with API Publishable key
     console.log(response.publishableKey)
     const stripe = Stripe(response.publishableKey);
-  
+
 
     // Error Handling
-    const { error } = await stripe.redirectToCheckout({
-           sessionId: response.sessionId,
+    const {
+        error
+    } = await stripe.redirectToCheckout({
+        sessionId: response.sessionId,
     });
 
     if (error) {
-           document
-               .querySelectorAll('button')
-               .forEach((button) => (button.disabled = false));
-           console.error(error);
-       }
+        document
+            .querySelectorAll('button')
+            .forEach((button) => (button.disabled = false));
+        console.error(error);
+    }
 })
