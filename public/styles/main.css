@@ -1121,9 +1121,9 @@ html {
 
 .donate-popup-overlay {
   background-color: rgba(0, 0, 0, 0.3);
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
   z-index: 9999;
   display: none;
   -webkit-box-pack: center;
