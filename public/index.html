@@ -54,9 +54,8 @@
           <!-- Custom Input -->
           <section id='custom-payment'>
             <p>Enter your custom amount.</p>
-            <form action="/.netlify/functions/custom-checkout" method="post" class='custom-payment-form' min="10.00"
-              step="0.01" max="999000" value="00.00">
-              <input type="number" class='custom-input' placeholder="100.00">
+            <form action="/.netlify/functions/custom-checkout" method="post" class='custom-payment-form'>
+              <input data-type="currency" type="number" class='custom-input' placeholder="100.00" min="1.00" max="999,999.00" step="0.01">
               <button>Donate</button>
               <p class='validation'></p>
             </form>
@@ -209,7 +208,7 @@
         <div class='donations-text'>
           <div>
             <h2>Make a donation today!</h2>
-            <p>Make an impact today by donating conviently with Apple Pay and Google Pay.</p>
+            <p>Make an impact today by donating conveniently with Apple Pay and Google Pay.</p>
           </div>
           <!-- Products Inject -->
           <section class="products">
@@ -217,22 +216,11 @@
               <h2>other</h2>
               <div class='other-popup'>
                 <input type="hidden" name="sku" value="" />
-                <button type="submit">Custom</button>
+                <button class='popup-btn' type="submit">Custom</button>
               </div>
             </div>
           </section>
           <!-- Products Inject -->
-          <!-- Custom Input -->
-          <!-- <section id='custom-payment'>
-            <p>Or Custom Amount</p>
-            <form action="/.netlify/functions/custom-checkout" method="post" class='custom-payment-form' min="10.00"
-              step="0.01" max="999000" value="00.00">
-              <input type="number" class='custom-input' placeholder="100.00">
-              <button>Donate</button>
-              <p class='validation'></p>
-            </form>
-          </section> -->
-          <!-- Custom Input -->
         </div>
       </div>
     </section>
@@ -352,7 +340,7 @@
     <div class="product">
       <!-- <img src="" alt="" /> -->
       <h2>name</h2>
-      <!-- <p class="description">description</p>
+      <!-- <p class="description">description</p>ƒ
       <p class="price">price</p> -->
       <form action="/.netlify/functions/create-checkout" method="post">
         <!-- <label for="quantity">Quantity</label>
@@ -363,7 +351,7 @@
     </div>
   </template>
   <script src="https://js.stripe.com/v3/"></script>
-  <script src='./scripts/stripe.js'></script>
+  <script src="scripts/stripe.js"></script>
   <script src='scripts/scripts.js'></script>
   <script src='scripts/customInput.js'></script>
 </body>
