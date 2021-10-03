@@ -53,11 +53,15 @@
              <img class='close-popup standard-icon' alt='close popup' src='images/close.svg'></span>
           <!-- Custom Input -->
           <section id='custom-payment'>
-            <p>Enter your custom amount.</p>
+            <h3>Enter your custom amount.</h3>
             <form action="/.netlify/functions/custom-checkout" method="post" class='custom-payment-form'>
-              <input data-type="currency" type="number" class='custom-input' placeholder="100.00" min="1.00" max="999,999.00" step="0.01">
+              <div class='input-div'>
+                <p>$</p>
+              <input data-type="currency" type="number" class='custom-input' placeholder="00.00" min="5.00" max="999,999.00" step="1.00"
+              inputmode="decimal" aria-label="donationAmountOther">
+              </div>
               <button>Donate</button>
-              <p class='validation'></p>
+              <p class='validation'>Note: Online donations must be greater than or equal to $5</p>
             </form>
           </section>
           <!-- Custom Input -->
@@ -215,8 +219,7 @@
             <div class="product">
               <h2>other</h2>
               <div class='other-popup'>
-                <input type="hidden" name="sku" value="" />
-                <button class='popup-btn' type="submit">Custom</button>
+                <button class='popup-btn'>Custom</button>
               </div>
             </div>
           </section>
