@@ -18,7 +18,8 @@ form.addEventListener('submit', async (event) => {
         errorOutput.style.display = 'block';
         errorOutput.style.color = 'Red'
     } else {
-        errorOutput.style.display = 'none'
+        errorOutput.textContent = 'Redirecting you to the checkout page . . .'
+        errorOutput.style.color = 'Green'
     }
 
     // format the value to pennies so Stripe can accept the value

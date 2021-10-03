@@ -1264,7 +1264,7 @@ html {
   text-align: center;
 }
 
-.other-popup button {
+.other-popup {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4;
