@@ -14,7 +14,7 @@ form.addEventListener('submit', async (event) => {
 
     // Number Input Validation
     if (input.value <= 0) {
-        errorOutput.textContent = "Please enter a valid amount. minimum of $1"
+        errorOutput.textContent = "***Online donation must be greater than or equal to $5"
         errorOutput.style.display = 'block';
         errorOutput.style.color = 'Red'
     } else {
@@ -26,11 +26,11 @@ form.addEventListener('submit', async (event) => {
 
     // create object upon click event 
     const product = {
-        sku: `Give a gift of $${ input.value }`,
-        name: `Give a gift of $${ input.value }`,
+        sku: `Amount: $${ input.value }`,
+        name: `Amount: $${ input.value }`,
         amount: formattedValue,
         currency: "USD",
-        description: `Give a gift of $${ input.value } to New Life Ministries`,
+        description: `Give a gift to New Life Ministries`,
         image: "https://drive.google.com/uc?export=view&id=1H56UtNBx8tqvZ7SBxTFQt6X840bAOfXE"
     }
 

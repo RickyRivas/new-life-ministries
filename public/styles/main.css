@@ -1215,6 +1215,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 35px;
 }
 
 .donate-popup-overlay #custom-payment .custom-payment-form .input-div p {
@@ -1230,7 +1231,7 @@ html {
   height: 100%;
   padding: 10px;
   border-radius: unset;
-  border: 1px solid #f1f1f1;
+  border: 1px solid #ccc;
 }
 
 .donate-popup-overlay #custom-payment .custom-payment-form button {
@@ -1249,7 +1250,7 @@ html {
   position: absolute;
   bottom: 1em;
   padding: 1em;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.5);
   font-size: 1em;
   text-align: center;
 }
@@ -1853,6 +1854,9 @@ html {
     padding: 10px 30px;
     color: white;
     border: 0;
+  }
+  #donations .donations .donations-text .products .product button:hover {
+    opacity: .8;
   }
 }
 

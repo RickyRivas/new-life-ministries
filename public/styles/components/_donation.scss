@@ -253,6 +253,9 @@
                             padding: 10px 30px;
                             color: white;
                             border: 0;
+                            &:hover{
+                                opacity: .8;
+                            }
 
                         }
                     }
