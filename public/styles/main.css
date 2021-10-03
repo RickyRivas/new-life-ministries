@@ -828,6 +828,9 @@ html {
     color: #ced4da;
     text-decoration: none;
   }
+  .footer a:hover {
+    color: white;
+  }
   .footer .col {
     text-align: left;
     margin-bottom: 3em;
@@ -844,7 +847,6 @@ html {
     font-weight: lighter;
     color: white;
     padding-bottom: 10px;
-    border-bottom: 1px solid white;
   }
   .footer .col p {
     color: #ced4da;
@@ -901,6 +903,10 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-size: .8em;
+  }
+  .footer .social-media a:hover {
+    color: white;
   }
   .footer .site-credit {
     margin: .5em 0;
@@ -1058,6 +1064,9 @@ html {
     color: #ced4da;
     font-size: .9em;
     margin-bottom: 1em;
+  }
+  .footer .col ul li:hover {
+    color: white;
   }
 }
 

@@ -18,6 +18,9 @@
     & a {
       color: #ced4da;
       text-decoration: none;
+      &:hover{
+        color: white;
+      }
     }
 
     & .col {
@@ -37,7 +40,6 @@
         font-weight: lighter;
         color: white;
         padding-bottom: 10px;
-        border-bottom: 1px solid white;
       }
 
       & p {
@@ -79,6 +81,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: .8em;
+        &:hover{
+          color: white;
+        }
       }
     }
 
@@ -223,6 +229,9 @@
           color: #ced4da;
           font-size: .9em;
           margin-bottom: 1em;
+          &:hover {
+          color: white;
+        }
         }
       }
     }
