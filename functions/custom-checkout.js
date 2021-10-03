@@ -44,6 +44,7 @@ exports.handler = async (event) => {
                 product_data: {
                     name: newProduct.name,
                     images: [newProduct.image],
+                    description: product.description,
                 },
             },
             quantity: 1

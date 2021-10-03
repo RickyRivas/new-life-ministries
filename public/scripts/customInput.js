@@ -76,3 +76,4 @@ popupTrigger.addEventListener('click', () => {
 closePopup.addEventListener('click', () => {
     popupOverlay.style.display = 'none';
 })
+
