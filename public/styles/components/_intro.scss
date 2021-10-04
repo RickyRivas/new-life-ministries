@@ -12,6 +12,8 @@
             flex-direction: column;
             height: 414px;
             padding: 3em 1em;
+            max-width: 414px;
+            margin: auto;
 
             & .intro-content {
                 position: relative;
@@ -28,7 +30,6 @@
                 align-self: center;
                 margin-top: -60px;
                 border-bottom: 2px solid $primary-color;
-                border-radius: 15px;
 
                 & img {
                     width: .5em;
@@ -49,7 +50,6 @@
                     background-repeat: no-repeat;
                     max-height: 100%;
                     max-width: 100%;
-                    border-radius: 15px;
                     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                 }
             }

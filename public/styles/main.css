@@ -2578,6 +2578,8 @@ html {
             flex-direction: column;
     height: 414px;
     padding: 3em 1em;
+    max-width: 414px;
+    margin: auto;
   }
   .intro-container .project-intro .intro-content {
     position: relative;
@@ -2602,7 +2604,6 @@ html {
         align-self: center;
     margin-top: -60px;
     border-bottom: 2px solid #55c882;
-    border-radius: 15px;
   }
   .intro-container .project-intro .intro-content img {
     width: .5em;
@@ -2624,7 +2625,6 @@ html {
     background-repeat: no-repeat;
     max-height: 100%;
     max-width: 100%;
-    border-radius: 15px;
     -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
