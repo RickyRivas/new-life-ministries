@@ -1,8 +1,10 @@
 @media (min-width: 0px) {
   .footer {
+    position: relative;
     width: 100vw;
     padding: 2em;
     background-color: $charlestongreen;
+    z-index: 9999;
 
     & .footer-container {
       display: flex;

@@ -801,9 +801,11 @@ html {
 
 @media (min-width: 0px) {
   .footer {
+    position: relative;
     width: 100vw;
     padding: 2em;
     background-color: #212529;
+    z-index: 9999;
   }
   .footer .footer-container {
     display: -webkit-box;
