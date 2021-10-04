@@ -1314,7 +1314,7 @@ html {
     z-index: 9998;
   }
   .bottom-fixed :nth-child(1) {
-    border-right: 1px solid black;
+    border-right: 1px solid white;
   }
   .bottom-fixed a {
     background-color: #55c882;
