@@ -1111,6 +1111,39 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    display: none;
+    right: 0;
+    top: 40%;
+    -webkit-transform-origin: 90% 30%;
+            transform-origin: 90% 30%;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+    z-index: 9997;
+  }
+  .fixed-btns a {
+    color: white;
+    background-color: #55c882;
+    padding: 5px 20px;
+    text-decoration: none;
+    margin-right: .5em;
+  }
+  .fixed-btns a:hover {
+    opacity: .8;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fixed-btns {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     right: 0;
     top: 40%;
     -webkit-transform-origin: 90% 30%;
@@ -1264,10 +1297,95 @@ html {
   text-align: center;
 }
 
-.other-popup {
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
+@media (min-width: 0px) {
+  .bottom-fixed {
+    position: fixed;
+    bottom: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    place-items: center;
+    width: 100%;
+    z-index: 9998;
+  }
+  .bottom-fixed :nth-child(1) {
+    border-right: 1px solid black;
+  }
+  .bottom-fixed a {
+    background-color: #55c882;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    height: 50px;
+    width: 100%;
+  }
+  .bottom-fixed.show {
+    visibility: visible;
+    opacity: 1;
+    -webkit-animation: opacityPopup .5s ease-in;
+            animation: opacityPopup .5s ease-in;
+  }
+  .bottom-fixed.hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bottom-fixed {
+    position: fixed;
+    bottom: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    place-items: center;
+    width: 100%;
+    z-index: 9998;
+    display: none;
+  }
+  .bottom-fixed :nth-child(1) {
+    border-right: 1px solid black;
+  }
+  .bottom-fixed a {
+    background-color: #55c882;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    height: 50px;
+    width: 100%;
+  }
+  .bottom-fixed.show {
+    visibility: visible;
+    opacity: 1;
+    -webkit-animation: opacityPopup .5s ease-in;
+            animation: opacityPopup .5s ease-in;
+  }
+  .bottom-fixed.hide {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 @-webkit-keyframes opacityPopup {
@@ -1286,6 +1404,41 @@ html {
   100% {
     opacity: 1;
   }
+}
+
+.top-link {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  z-index: 2;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 1em 1em 0;
+  border-radius: 50%;
+  padding: 1px;
+  width: 40px;
+  height: 40px;
+  background: var(--standard-gold);
+}
+
+.top-link.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.top-link.hide {
+  visibility: hidden;
+  opacity: 0;
 }
 
 @media (min-width: 0px) {
@@ -1666,6 +1819,11 @@ html {
   }
   #donations .donations .donations-text .products .product button :hover {
     opacity: .8;
+  }
+  #donations .donations .donations-text .products .other-popup {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
   }
 }
 

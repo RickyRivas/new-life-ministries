@@ -27,26 +27,23 @@ navSlide();
 
 document.querySelector('video').playbackRate = 1;
 
+// JS for Scroll Function
+const scrollToTopButton = document.querySelector("#js-top");
+
+// Let's set up a function that shows our scroll-to-top button if we scroll beyond the height of the initial window.
 const scrollFunc = () => {
+  // Get the current scroll value
   let y = window.scrollY;
 
+  // If the scroll value is greater than the window height, let's add a class to the scroll-to-top button to show it!
+  if (y > 0) {
+    scrollToTopButton.className = "bottom-fixed show";
+  } else {
+    scrollToTopButton.className = "bottom-fixed hide";
+  }
 };
 
-// JS for Scroll Function
-
-// window.addEventListener("scroll", scrollFunc);
-
-// window.onscroll = () => {
-//   const nav = document.querySelector('#navbar');
-//   const logop = document.querySelector('#logo-p');
-//   if (this.scrollY <= 10) nav.className = '';
-//   else nav.className = 'scroll';
-//   if (this.scrollY <= 10) logop.className = '';
-//   else logop.className = 'scroll-p';
-// };
-
-// JS for reverse navSlide for when user clicks on nav link item to redirect to section on same page and automatically closes the 
-// nav for them
+window.addEventListener("scroll", scrollFunc);
 
 // removed temp
 

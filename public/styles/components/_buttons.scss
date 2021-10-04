@@ -30,6 +30,33 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        display: none;
+        right: 0;
+        top: 40%;
+        transform-origin: 90% 30%;
+        transform: rotate(270deg);
+        z-index: 9997;
+
+        & a {
+            color: white;
+            background-color: $primary-color;
+            padding: 5px 20px;
+            text-decoration: none;
+            margin-right: .5em;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .fixed-btns {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         right: 0;
         top: 40%;
         transform-origin: 90% 30%;
@@ -125,34 +152,109 @@
                     border: 1px solid #ccc;
                 }
             }
-                button {
-                    background-color: $primary-color;
-                    padding: 10px 30px;
-                    color: white;
-                    border: 0;
-                    cursor: pointer;
-                    &:hover {
-                        opacity: .8;
-                    }
-                }
 
-                .validation {
-                    position: absolute;
-                    bottom: 1em;
-                    padding: 1em;
-                    color: rgba(0,0,0,.5);
-                    font-size: 1em;
-                    text-align: center;
+            button {
+                background-color: $primary-color;
+                padding: 10px 30px;
+                color: white;
+                border: 0;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: .8;
                 }
-            
+            }
+
+            .validation {
+                position: absolute;
+                bottom: 1em;
+                padding: 1em;
+                color: rgba(0, 0, 0, .5);
+                font-size: 1em;
+                text-align: center;
+            }
+
         }
     }
 }
 
-.other-popup {
-    order: 4;
-}
+@media (min-width: 0px) {
+    .bottom-fixed {
+        position: fixed;
+        bottom: 0;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        width: 100%;
+        z-index: 9998;
 
+        & :nth-child(1) {
+            border-right: 1px solid black;
+        }
+
+        & a {
+            background-color: $primary-color;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            height: 50px;
+            width: 100%;
+        }
+
+        &.show {
+            visibility: visible;
+            opacity: 1;
+            animation: opacityPopup .5s ease-in;
+        }
+
+        &.hide {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .bottom-fixed {
+        position: fixed;
+        bottom: 0;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        width: 100%;
+        z-index: 9998;
+        display: none;
+
+        & :nth-child(1) {
+            border-right: 1px solid black;
+        }
+
+        & a {
+            background-color: $primary-color;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            height: 50px;
+            width: 100%;
+        }
+
+        &.show {
+            visibility: visible;
+            opacity: 1;
+            animation: opacityPopup .5s ease-in;
+        }
+
+        &.hide {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+}
 @keyframes opacityPopup {
     0% {
         opacity: 0;
@@ -160,5 +262,33 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+.top-link {
+    transition: all 0.25s ease-in-out;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: inline-flex;
+    z-index: 2;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1em 1em 0;
+    border-radius: 50%;
+    padding: 1px;
+    width: 40px;
+    height: 40px;
+    background: var(--standard-gold);
+
+    &.show {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &.hide {
+        visibility: hidden;
+        opacity: 0;
     }
 }

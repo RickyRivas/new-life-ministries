@@ -84,6 +84,12 @@
                             }
                         }
                     }
+
+                    & .other-popup {
+                        order: 4;
+                        & button {
+                        }
+                    }
                 }
             }
         }
@@ -253,7 +259,8 @@
                             padding: 10px 30px;
                             color: white;
                             border: 0;
-                            &:hover{
+
+                            &:hover {
                                 opacity: .8;
                             }
 

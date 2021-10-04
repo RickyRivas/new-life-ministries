@@ -48,7 +48,7 @@
   <!-- Navigation End -->
   <!-- Main Container Start -->
   <main>
-    <!-- donate popup -->
+    <!-- donate popup start -->
     <div class='donate-popup-overlay'>
       <div class='donate-popup-content'>
         <img class='close-popup standard-icon' alt='close popup' src='images/close.svg'></span>
@@ -68,11 +68,19 @@
         <!-- Custom Input -->
       </div>
     </div>
-    <!-- donate popup -->
+    <!-- donate popup end -->
+    <!-- Side buttons -->
     <div class='fixed-btns'>
       <a href="#donations">Donate</a>
       <a href="#contact">Contact</a>
     </div>
+    <!-- Side buttons -->
+    <!-- bottom fixed -->
+    <div class='bottom-fixed hide'  id="js-top">
+       <a href="#donations">Donate Now</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+    <!-- bottom fixed -->
     <!-- New Landing Start -->
     <section class='new-landing'>
       <video id="videoBG" poster='/images/poster1.PNG' autoplay loop muted playsinline>
@@ -98,7 +106,6 @@
     <!-- Videos Start -->
     <section id='videos'>
       <div class='videos'>
-        <!---->
         <div class='video-box'>
           <div class='video-text'>
             <div>
@@ -120,7 +127,6 @@
             </a>
           </div>
         </div>
-        <!---->
         <div class='video-box'>
           <div class='video-text'>
             <div>
@@ -216,12 +222,14 @@
             recusandae repellat facilis aperiam debitis exercitationem.</p>
           <!-- Products Inject -->
           <section class="products">
-            <div class="product">
-              <h2>other</h2>
+            <!-- Custom input Product -->
+            <div class="product other-popup">
+              <h2>Other</h2>
               <div class='other-popup'>
                 <button class='popup-btn'>Custom</button>
               </div>
             </div>
+            <!-- Custom input Product -->
           </section>
           <!-- Products Inject -->
         </div>
@@ -231,7 +239,7 @@
     <!-- Contact Section Start -->
     <section id='contact' class='contact-section'>
       <div class='contact-container'>
-        <!-- Form -->
+        <!-- Form Start -->
         <form class='contact-form' name="contact" method="POST" data-netlify="true">
           <div>
             <h2>Get in touch.</h2>
@@ -254,7 +262,7 @@
             <button type="submit">Send</button>
           </p>
         </form>
-        <!-- Form -->
+        <!-- Form End -->
         <div class='contact-divs'>
           <div class='contact-info'>
             <div>
@@ -337,20 +345,17 @@
     <!-- Landing Container End -->
   </main>
   <!-- Main Container End -->
+  <!-- Product Template -->
   <template id="product">
     <div class="product">
-      <!-- <img src="" alt="" /> -->
       <h2>name</h2>
-      <!-- <p class="description">description</p>ƒ
-      <p class="price">price</p> -->
       <form action="/.netlify/functions/create-checkout" method="post">
-        <!-- <label for="quantity">Quantity</label>
-        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10" /> -->
         <input type="hidden" name="sku" value="" />
         <button type="submit">Donate</button>
       </form>
     </div>
   </template>
+  <!-- Product Template -->
   <script src="https://js.stripe.com/v3/"></script>
   <script src="scripts/stripe.js"></script>
   <script src='scripts/scripts.js'></script>
