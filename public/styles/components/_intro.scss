@@ -1,36 +1,165 @@
 @media (min-width: 0px) {
-    .project-intro {
-        position: relative;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50vh;
-        background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(/images/msday326.jpg);
-        background-size: cover;
-        background-position: center;
-         :nth-child(1){
-             color: white;
-             font-family: "cookie", cursive;
-             font-size: 1.8em;
-         }
+    .intro-container {
+        width: 100%;
+        background-color: #f9f9f9;
+
+        .project-intro {
+            position: relative;
+            margin: auto;
+            display: flex;
+            justify-content: flex-start;
+            align-content: center;
+            flex-direction: column;
+            height: max-content;
+            padding: 3em 1em;
+
+            & .intro-content {
+                position: relative;
+                font-family: "cookie", cursive;
+                font-size: 1.8em;
+                background-color: white;
+                width: 90%;
+                height: 115px;
+                display: flex;
+                justify-content: center;
+                z-index: 2;
+                align-items: center;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                align-self: center;
+                margin-top: -60px;
+                border-bottom: 2px solid $primary-color;
+                border-radius: 15px;
+
+                & img {
+                    width: .5em;
+                    height: .5em;
+                    position: absolute;
+                    bottom: .1em;
+                }
+            }
+
+            & .intro-img {
+                height: max-content;
+                z-index: 1;
+                width: 100%;
+
+                img {
+                    object-fit: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    height: 100%;
+                    max-width: 100%;
+                    border-radius: 15px;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                }
+            }
+        }
     }
 }
+
 @media (min-width: 768px) {
-    .project-intro {
-        position: relative;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 600px;
-        background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(/images/msday326.jpg);
-        background-size: cover;
-        background-position: center;
-         :nth-child(1){
-             color: white;
-             font-family: "cookie", cursive;
-             font-size: 1.8em;
-         }
+    .intro-container {
+        width: 100%;
+
+        .project-intro {
+            position: relative;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: row;
+            height: max-content;
+            padding: 3em 1em;
+            max-width: 768px;
+            margin: auto;
+
+            & .intro-content {
+                font-family: "cookie", cursive;
+                font-size: 1.8em;
+                background-color: white;
+                width: 354px;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                z-index: 2;
+                align-items: center;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                align-self: center;
+                justify-self: center;
+                margin: auto;
+                margin-left: -150px;
+            }
+
+            & .intro-img {
+                height: max-content;
+                z-index: 1;
+                width: 450px;
+                margin: auto;
+
+                img {
+                    object-fit: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    height: 100%;
+                    max-width: 100%;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .intro-container {
+        width: 100%;
+
+        .project-intro {
+            position: relative;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: row;
+            height: max-content;
+            padding: 3em 1em;
+            max-width: 1200px;
+            margin: auto;
+
+            & .intro-content {
+                font-family: "cookie", cursive;
+                font-size: 1.8em;
+                background-color: white;
+                width: 354px;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                z-index: 2;
+                align-items: center;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                align-self: center;
+                justify-self: center;
+                margin: auto;
+                border-radius: 15px;
+                margin-left: -200px;
+            }
+
+            & .intro-img {
+                height: max-content;
+                z-index: 1;
+                width: 550px;
+                margin: auto;
+
+                img {
+                    object-fit: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    height: 100%;
+                    max-width: 100%;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                    border-radius: 15px;
+                }
+            }
+        }
     }
 }

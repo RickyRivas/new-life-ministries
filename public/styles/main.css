@@ -1622,7 +1622,7 @@ html {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-    max-width: 1200px;
+    max-width: 1100px;
     max-height: 504px;
     margin: auto;
     margin-bottom: 2em;
@@ -1644,7 +1644,7 @@ html {
   #videos .videos .video-box .video-thumbnail img {
     max-width: 100%;
     border-radius: 50%;
-    max-width: 450px;
+    max-width: 400px;
   }
   #videos .videos .video-box .video-thumbnail .play {
     position: absolute;
@@ -2557,33 +2557,86 @@ html {
 }
 
 @media (min-width: 0px) {
-  .project-intro {
+  .intro-container {
+    width: 100%;
+    background-color: #f9f9f9;
+  }
+  .intro-container .project-intro {
     position: relative;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 3em 1em;
+  }
+  .intro-container .project-intro .intro-content {
+    position: relative;
+    font-family: "cookie", cursive;
+    font-size: 1.8em;
+    background-color: white;
+    width: 90%;
+    height: 115px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    z-index: 2;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 50vh;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/images/msday326.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/msday326.jpg);
-    background-size: cover;
-    background-position: center;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-top: -60px;
+    border-bottom: 2px solid #55c882;
+    border-radius: 15px;
   }
-  .project-intro :nth-child(1) {
-    color: white;
-    font-family: "cookie", cursive;
-    font-size: 1.8em;
+  .intro-container .project-intro .intro-content img {
+    width: .5em;
+    height: .5em;
+    position: absolute;
+    bottom: .1em;
+  }
+  .intro-container .project-intro .intro-img {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    z-index: 1;
+    width: 100%;
+  }
+  .intro-container .project-intro .intro-img img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
 }
 
 @media (min-width: 768px) {
-  .project-intro {
+  .intro-container {
+    width: 100%;
+  }
+  .intro-container .project-intro {
     position: relative;
     margin: auto;
     display: -webkit-box;
@@ -2592,28 +2645,138 @@ html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 3em 1em;
+    max-width: 768px;
+    margin: auto;
+  }
+  .intro-container .project-intro .intro-content {
+    font-family: "cookie", cursive;
+    font-size: 1.8em;
+    background-color: white;
+    width: 354px;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 2;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 600px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/images/msday326.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/msday326.jpg);
-    background-size: cover;
-    background-position: center;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    -ms-flex-item-align: center;
+        align-self: center;
+    justify-self: center;
+    margin: auto;
+    margin-left: -150px;
   }
-  .project-intro :nth-child(1) {
-    color: white;
+  .intro-container .project-intro .intro-img {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    z-index: 1;
+    width: 450px;
+    margin: auto;
+  }
+  .intro-container .project-intro .intro-img img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    max-width: 100%;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro-container {
+    width: 100%;
+  }
+  .intro-container .project-intro {
+    position: relative;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 3em 1em;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .intro-container .project-intro .intro-content {
     font-family: "cookie", cursive;
     font-size: 1.8em;
+    background-color: white;
+    width: 354px;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 2;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    -ms-flex-item-align: center;
+        align-self: center;
+    justify-self: center;
+    margin: auto;
+    border-radius: 15px;
+    margin-left: -200px;
+  }
+  .intro-container .project-intro .intro-img {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    z-index: 1;
+    width: 550px;
+    margin: auto;
+  }
+  .intro-container .project-intro .intro-img img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    max-width: 100%;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
   }
 }
 
 @media (min-width: 0px) {
   main {
     position: relative;
-  }
-  body {
-    background-color: black;
   }
   .new-landing {
     width: 100%;
@@ -2700,9 +2863,6 @@ html {
   main {
     position: relative;
   }
-  body {
-    background-color: black;
-  }
   .new-landing {
     width: 100%;
     height: 768px;
@@ -2787,9 +2947,6 @@ html {
 @media (min-width: 1200px) {
   main {
     position: relative;
-  }
-  body {
-    background-color: black;
   }
   .new-landing {
     width: 100%;
