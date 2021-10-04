@@ -49,6 +49,10 @@
                         }
                     }
                 }
+                // when user hovers over the parent => the child background color will change
+                & .video-thumbnail:hover .play{
+                        background-color: $primary-color;
+                    }
 
                 & .video-text {
                     display: flex;

@@ -1345,6 +1345,9 @@ html {
     width: 1em;
     height: 1em;
   }
+  #videos .videos .video-box .video-thumbnail:hover .play {
+    background-color: #55c882;
+  }
   #videos .videos .video-box .video-text {
     display: -webkit-box;
     display: -ms-flexbox;
