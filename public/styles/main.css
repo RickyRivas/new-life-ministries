@@ -2576,9 +2576,7 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+    height: 414px;
     padding: 3em 1em;
   }
   .intro-container .project-intro .intro-content {
