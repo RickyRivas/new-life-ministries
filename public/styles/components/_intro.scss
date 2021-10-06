@@ -1,19 +1,27 @@
 @media (min-width: 0px) {
-    .intro-container {
-        height: 500px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        padding: 1em;
-        font-size: 16px;
+    #intro-container {
+        width: 100%;
+        position: relative;
+        padding: 1em 0;
+        background-color:#f9f9f9;
 
-        .intro-content {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            &::before {
+        .intro-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            font-size: 16px;
+            padding: .5em;
+            margin: auto;
+            max-width: 400px;
+
+            .intro-content {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                &::before {
                     content: '';
                     position: absolute;
                     background-image: url(/images/leaf.svg);
@@ -25,6 +33,7 @@
                     right: 2em;
                     z-index: 2;
                 }
+
                 &::after {
                     content: '';
                     position: absolute;
@@ -34,33 +43,221 @@
                     width: 60px;
                     height: 60px;
                     opacity: 20%;
-                    bottom: 0em;
+                    bottom: 1em;
                     left: 1em;
                     z-index: 2;
                 }
-            &>div {
-                letter-spacing: 2px;
-                h2 {
-                    font-size: 5.5em;
-                    font-family: 'cookie', cursive;
-                    letter-spacing: 8px;
-                    font-weight: bolder;
-                }
 
-                span {
-                    font-size: 1.2em;
-                    border-bottom: 2px solid $primary-color;
-                    font-weight: bold;
+                &>div {
+                    letter-spacing: 2px;
+
+                    h2 {
+                        font-size: 5em;
+                        font-family: 'cookie', cursive;
+                        letter-spacing: 8px;
+                        font-weight: bolder;
+                    }
+
+                    span {
+                        font-size: 1.1em;
+                        margin-top: -10px;
+                        border-bottom: 2px solid $primary-color;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .intro-img {
+                img {
+                    width: 100%;
+                    max-width: 400px;
+                    max-height: 100%;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                 }
             }
         }
+    }
+    & .boxes {
+        position: absolute;
+        bottom: -8px;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .box1 {
+            height: 8px;
+            background-color: $primary-color;
+            width: 50px;
+            margin-right: 5px;
+            transform: skew(-10deg);
+        }
+        .box2 {
+            height: 8px;
+            background-color: $primary-color;
+            width: 50px;
+            transform: skew(-10deg);
+        }
+    }
+}
 
-        .intro-img {
-            img {
-                border-radius: 8px;
-                max-width: 100%;
-                max-height: 100%;
-                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+@media (min-width: 768px) {
+    #intro-container {
+        width: 100%;
+
+        .intro-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            font-size: 16px;
+            padding: 1em;
+            margin: auto;
+            width: 100%;
+            max-width: 786px;
+
+            .intro-content {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-image: url(/images/leaf.svg);
+                    background-size: cover;
+                    background-position: center;
+                    width: 50px;
+                    height: 50px;
+                    top: 1em;
+                    right: 2em;
+                    z-index: 2;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background-image: url(/images/aquarius.svg);
+                    background-size: cover;
+                    background-position: center;
+                    width: 60px;
+                    height: 60px;
+                    opacity: 20%;
+                    bottom: 1em;
+                    left: 1em;
+                    z-index: 2;
+                }
+
+                &>div {
+                    letter-spacing: 2px;
+
+                    h2 {
+                        font-size: 5em;
+                        font-family: 'cookie', cursive;
+                        letter-spacing: 8px;
+                        font-weight: bolder;
+                    }
+
+                    span {
+                        font-size: 1.1em;
+                        margin-top: -10px;
+                        border-bottom: 2px solid $primary-color;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .intro-img {
+                img {
+                    width: 100%;
+                    max-width: 400px;
+                    max-height: 100%;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    #intro-container {
+        width: 100%;
+        background-color:#f9f9f9;
+        padding: 3em 1em;
+        position: relative;
+
+        .intro-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            font-size: 16px;
+            padding: 1em;
+            margin: auto;
+            width: 100%;
+            max-width: 1100px;
+
+            .intro-content {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-image: url(/images/leaf.svg);
+                    background-size: cover;
+                    background-position: center;
+                    width: 50px;
+                    height: 50px;
+                    top: 1em;
+                    right: 2em;
+                    z-index: 2;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background-image: url(/images/aquarius.svg);
+                    background-size: cover;
+                    background-position: center;
+                    width: 60px;
+                    height: 60px;
+                    opacity: 20%;
+                    bottom: 1em;
+                    left: 1em;
+                    z-index: 2;
+                }
+
+                &>div {
+                    letter-spacing: 2px;
+
+                    h2 {
+                        font-size: 6em;
+                        font-family: 'cookie', cursive;
+                        letter-spacing: 8px;
+                        font-weight: bolder;
+                    }
+
+                    span {
+                        font-size: 1.1em;
+                        margin-top: -10px;
+                        border-bottom: 2px solid $primary-color;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .intro-img {
+                img {
+                    width: 100%;
+                    border-radius: .5em;
+                    max-width: 400px;
+                    max-height: 100%;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                }
             }
         }
     }
