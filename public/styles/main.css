@@ -1276,6 +1276,8 @@ html {
   padding: 10px;
   border-radius: unset;
   border: 1px solid #ccc;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .donate-popup-overlay #custom-payment .custom-payment-form button {
@@ -1311,7 +1313,7 @@ html {
         grid-template-columns: 1fr 1fr;
     place-items: center;
     width: 100%;
-    z-index: 9998;
+    z-index: 9997;
   }
   .bottom-fixed :nth-child(1) {
     border-right: 1px solid white;
@@ -2558,217 +2560,77 @@ html {
 
 @media (min-width: 0px) {
   .intro-container {
-    width: 100%;
-    background-color: #f9f9f9;
+    height: 500px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    padding: 1em;
+    font-size: 16px;
   }
-  .intro-container .project-intro {
+  .intro-container .intro-content {
     position: relative;
-    margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 414px;
-    padding: 3em 1em;
-    max-width: 414px;
-    margin: auto;
   }
-  .intro-container .project-intro .intro-content {
-    position: relative;
-    font-family: "cookie", cursive;
-    font-size: 1.8em;
-    background-color: white;
-    width: 90%;
-    height: 115px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    z-index: 2;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    -ms-flex-item-align: center;
-        align-self: center;
-    margin-top: -60px;
-    border-bottom: 2px solid #55c882;
-  }
-  .intro-container .project-intro .intro-content img {
-    width: .5em;
-    height: .5em;
+  .intro-container .intro-content::before {
+    content: '';
     position: absolute;
-    bottom: .1em;
-  }
-  .intro-container .project-intro .intro-img {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    z-index: 1;
-    width: 100%;
-  }
-  .intro-container .project-intro .intro-img img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    background-image: url(/public/images/leaf.svg);
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    max-height: 100%;
-    max-width: 100%;
-    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  }
-}
-
-@media (min-width: 768px) {
-  .intro-container {
-    width: 100%;
-  }
-  .intro-container .project-intro {
-    position: relative;
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    padding: 3em 1em;
-    max-width: 768px;
-    margin: auto;
-  }
-  .intro-container .project-intro .intro-content {
-    font-family: "cookie", cursive;
-    font-size: 1.8em;
-    background-color: white;
-    width: 354px;
-    height: 150px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 50px;
+    height: 50px;
+    top: 1em;
+    right: 2em;
     z-index: 2;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    -ms-flex-item-align: center;
-        align-self: center;
-    justify-self: center;
-    margin: auto;
-    margin-left: -150px;
   }
-  .intro-container .project-intro .intro-img {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    z-index: 1;
-    width: 450px;
-    margin: auto;
-  }
-  .intro-container .project-intro .intro-img img {
-    -o-object-fit: cover;
-       object-fit: cover;
+  .intro-container .intro-content::after {
+    content: '';
+    position: absolute;
+    background-image: url(/public/images/aquarius.svg);
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    max-height: 100%;
-    max-width: 100%;
-    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .intro-container {
-    width: 100%;
-  }
-  .intro-container .project-intro {
-    position: relative;
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    padding: 3em 1em;
-    max-width: 1200px;
-    margin: auto;
-  }
-  .intro-container .project-intro .intro-content {
-    font-family: "cookie", cursive;
-    font-size: 1.8em;
-    background-color: white;
-    width: 354px;
-    height: 200px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 60px;
+    height: 60px;
+    opacity: 20%;
+    bottom: 0em;
+    left: 1em;
     z-index: 2;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    -ms-flex-item-align: center;
-        align-self: center;
-    justify-self: center;
-    margin: auto;
-    border-radius: 15px;
-    margin-left: -200px;
   }
-  .intro-container .project-intro .intro-img {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    z-index: 1;
-    width: 550px;
-    margin: auto;
+  .intro-container .intro-content > div {
+    letter-spacing: 2px;
   }
-  .intro-container .project-intro .intro-img img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
+  .intro-container .intro-content > div h2 {
+    font-size: 5.5em;
+    font-family: 'cookie', cursive;
+    letter-spacing: 8px;
+    font-weight: bolder;
+  }
+  .intro-container .intro-content > div span {
+    font-size: 1.2em;
+    border-bottom: 2px solid #55c882;
+    font-weight: bold;
+  }
+  .intro-container .intro-img img {
+    border-radius: 8px;
     max-width: 100%;
+    max-height: 100%;
     -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 15px;
   }
 }
 

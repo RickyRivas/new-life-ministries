@@ -150,6 +150,7 @@
                     padding: 10px;
                     border-radius: unset;
                     border: 1px solid #ccc;
+                    box-shadow: none;
                 }
             }
 
@@ -187,7 +188,7 @@
         grid-template-columns: 1fr 1fr;
         place-items: center;
         width: 100%;
-        z-index: 9998;
+        z-index: 9997;
 
         & :nth-child(1) {
             border-right: 1px solid white;
