@@ -2589,7 +2589,7 @@ html {
   .intro-container .intro-content::before {
     content: '';
     position: absolute;
-    background-image: url(/public/images/leaf.svg);
+    background-image: url(/images/leaf.svg);
     background-size: cover;
     background-position: center;
     width: 50px;
@@ -2601,7 +2601,7 @@ html {
   .intro-container .intro-content::after {
     content: '';
     position: absolute;
-    background-image: url(/public/images/aquarius.svg);
+    background-image: url(/images/aquarius.svg);
     background-size: cover;
     background-position: center;
     width: 60px;
