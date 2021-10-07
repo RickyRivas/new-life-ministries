@@ -3,9 +3,10 @@
         width: 100%;
         position: relative;
         padding: 1em 0;
-        background-color:#f9f9f9;
+        background-color: #f9f9f9;
 
         .intro-container {
+            position: relative;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
@@ -13,6 +14,8 @@
             padding: .5em;
             margin: auto;
             max-width: 400px;
+            z-index: 10;
+            color: white;
 
             .intro-content {
                 position: relative;
@@ -77,27 +80,50 @@
             }
         }
     }
+
     & .boxes {
         position: absolute;
-        bottom: -8px;
+        bottom: -10px;
         transform: translate(-50%, -50%);
         left: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 10;
+
         .box1 {
-            height: 8px;
+            height: 10px;
             background-color: $primary-color;
             width: 50px;
             margin-right: 5px;
             transform: skew(-10deg);
         }
+
         .box2 {
-            height: 8px;
+            height: 10px;
             background-color: $primary-color;
             width: 50px;
             transform: skew(-10deg);
         }
+    }
+
+   & .parallax {
+       position: absolute;
+       top: 0;
+       right: 0;
+       left: 0;
+       bottom: 0;
+        /* The image used */
+        background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(/public/images/thumbnail2.jpg);
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
@@ -183,7 +209,7 @@
 @media (min-width: 1024px) {
     #intro-container {
         width: 100%;
-        background-color:#f9f9f9;
+        background-color: #f9f9f9;
         padding: 3em 1em;
         position: relative;
 
