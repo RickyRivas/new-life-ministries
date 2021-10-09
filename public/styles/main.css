@@ -1778,7 +1778,7 @@ html {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: left;
-    background-image: url(/images/dd1125.jpg);
+    background-image: url(/images/gridimg1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1885,7 +1885,7 @@ html {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: left;
-    background-image: url(/images/dd1125.jpg);
+    background-image: url(/images/gridimg1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1989,7 +1989,7 @@ html {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: left;
-    background-image: url(/images/dd1125.jpg);
+    background-image: url(/images/gridimg1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2096,7 +2096,7 @@ html {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: left;
-    background-image: url(/images/dd1125.jpg);
+    background-image: url(/images/gridimg1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2562,23 +2562,33 @@ html {
   #intro-container {
     width: 100%;
     position: relative;
-    padding: 1em 0;
+    padding: 1em;
     background-color: #f9f9f9;
   }
   #intro-container .intro-container {
     position: relative;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 320px;
     font-size: 16px;
-    padding: .5em;
     margin: auto;
-    max-width: 400px;
     z-index: 10;
     color: white;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/images/dd120.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/dd120.jpg);
+    background-position: center;
+    background-size: cover;
   }
   #intro-container .intro-container .intro-content {
     position: relative;
@@ -2596,31 +2606,6 @@ html {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #intro-container .intro-container .intro-content::before {
-    content: '';
-    position: absolute;
-    background-image: url(/images/leaf.svg);
-    background-size: cover;
-    background-position: center;
-    width: 50px;
-    height: 50px;
-    top: 1em;
-    right: 2em;
-    z-index: 2;
-  }
-  #intro-container .intro-container .intro-content::after {
-    content: '';
-    position: absolute;
-    background-image: url(/images/aquarius.svg);
-    background-size: cover;
-    background-position: center;
-    width: 60px;
-    height: 60px;
-    opacity: 20%;
-    bottom: 1em;
-    left: 1em;
-    z-index: 2;
-  }
   #intro-container .intro-container .intro-content > div {
     letter-spacing: 2px;
   }
@@ -2636,19 +2621,13 @@ html {
     border-bottom: 2px solid #55c882;
     font-weight: bold;
   }
-  #intro-container .intro-container .intro-img img {
+}
+
+@media (min-width: 768px) {
+  #intro-container {
     width: 100%;
-    max-width: 400px;
-    max-height: 100%;
-    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
-  .boxes {
-    position: absolute;
-    bottom: -10px;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    left: 50%;
+  #intro-container .intro-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2658,52 +2637,6 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    z-index: 10;
-  }
-  .boxes .box1 {
-    height: 10px;
-    background-color: #55c882;
-    width: 50px;
-    margin-right: 5px;
-    -webkit-transform: skew(-10deg);
-            transform: skew(-10deg);
-  }
-  .boxes .box2 {
-    height: 10px;
-    background-color: #55c882;
-    width: 50px;
-    -webkit-transform: skew(-10deg);
-            transform: skew(-10deg);
-  }
-  .parallax {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    /* The image used */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/images/msday326.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/msday326.jpg);
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    background-position: 50% 20%;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-@media (min-width: 768px) {
-  #intro-container {
-    width: 100%;
-  }
-  #intro-container .intro-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
     font-size: 16px;
     padding: 1em;
     margin: auto;
@@ -2726,31 +2659,6 @@ html {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #intro-container .intro-container .intro-content::before {
-    content: '';
-    position: absolute;
-    background-image: url(/images/leaf.svg);
-    background-size: cover;
-    background-position: center;
-    width: 50px;
-    height: 50px;
-    top: 1em;
-    right: 2em;
-    z-index: 2;
-  }
-  #intro-container .intro-container .intro-content::after {
-    content: '';
-    position: absolute;
-    background-image: url(/images/aquarius.svg);
-    background-size: cover;
-    background-position: center;
-    width: 60px;
-    height: 60px;
-    opacity: 20%;
-    bottom: 1em;
-    left: 1em;
-    z-index: 2;
-  }
   #intro-container .intro-container .intro-content > div {
     letter-spacing: 2px;
   }
@@ -2766,34 +2674,39 @@ html {
     border-bottom: 2px solid #55c882;
     font-weight: bold;
   }
-  #intro-container .intro-container .intro-img img {
-    width: 100%;
-    max-width: 400px;
-    max-height: 100%;
-    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  }
 }
 
 @media (min-width: 1024px) {
   #intro-container {
     width: 100%;
     background-color: #f9f9f9;
-    padding: 3em 1em;
+    padding: 1em;
     position: relative;
   }
   #intro-container .intro-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-size: 16px;
     padding: 1em;
     margin: auto;
     width: 100%;
+    height: 500px;
     max-width: 1100px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/images/dd120.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/dd120.jpg);
+    background-position: center;
+    background-size: cover;
   }
   #intro-container .intro-container .intro-content {
     position: relative;
@@ -2811,31 +2724,6 @@ html {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #intro-container .intro-container .intro-content::before {
-    content: '';
-    position: absolute;
-    background-image: url(/images/leaf.svg);
-    background-size: cover;
-    background-position: center;
-    width: 50px;
-    height: 50px;
-    top: 1em;
-    right: 2em;
-    z-index: 2;
-  }
-  #intro-container .intro-container .intro-content::after {
-    content: '';
-    position: absolute;
-    background-image: url(/images/aquarius.svg);
-    background-size: cover;
-    background-position: center;
-    width: 60px;
-    height: 60px;
-    opacity: 20%;
-    bottom: 1em;
-    left: 1em;
-    z-index: 2;
-  }
   #intro-container .intro-container .intro-content > div {
     letter-spacing: 2px;
   }
@@ -2851,30 +2739,6 @@ html {
     border-bottom: 2px solid #55c882;
     font-weight: bold;
   }
-  #intro-container .intro-container .intro-img img {
-    width: 100%;
-    border-radius: .5em;
-    max-width: 450px;
-    max-height: 100%;
-    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  }
-  #intro-container .parallax {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    /* The image used */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/images/msday326.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/msday326.jpg);
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    background-position: 50% 40%;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 }
 
 @media (min-width: 0px) {
@@ -2883,7 +2747,7 @@ html {
   }
   .new-landing {
     width: 100%;
-    height: 95vh;
+    height: 600px;
     position: relative;
     overflow: hidden;
     padding: 2em;
