@@ -14,7 +14,7 @@
     z-index: 100;
   }
 
-  nav {
+  header {
     position: absolute;
     z-index: 5;
     width: 100vw;
@@ -25,7 +25,7 @@
       z-index: 100;
     }
 
-    & .nav-wrapper {
+    & nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -164,7 +164,7 @@
 }
 
 @media (min-width: 768px) {
-   nav {
+  header {
     position: absolute;
     z-index: 1000;
     display: flex;
@@ -174,7 +174,7 @@
     width: 100vw;
     background-color: transparent;
 
-    & .nav-wrapper {
+    & nav {
       z-index: 1000;
       display: flex;
       justify-content: space-between;
@@ -298,7 +298,7 @@
 }
 
 @media (min-width: 1024px) {
-  nav {
+  header {
     position: absolute;
     z-index: 1000;
     display: flex;
@@ -308,7 +308,7 @@
     width: 100vw;
     background-color: transparent;
 
-    & .nav-wrapper {
+    & nav {
       z-index: 1000;
       display: flex;
       justify-content: space-between;
@@ -432,7 +432,7 @@
 }
 
 @media (min-width: 1300px) {
-  nav {
+  header {
     z-index: 1000;
     display: flex;
     justify-content: center;
@@ -447,7 +447,7 @@
     // left: 50%;
     // transform: translate(-50%, -50%);
 
-    & .nav-wrapper {
+    & nav {
       z-index: 1000;
       display: flex;
       justify-content: space-between;
