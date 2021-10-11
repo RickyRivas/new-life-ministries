@@ -943,9 +943,12 @@ html {
     display: -ms-grid;
     display: grid;
     grid-gap: 1em;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    place-items: center;
+    width: 100%;
     max-width: unset;
     height: 100%;
     margin: auto;
@@ -1604,7 +1607,7 @@ html {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1000px) {
   #videos {
     width: 100%;
     background-color: white;
@@ -1650,7 +1653,7 @@ html {
   #videos .videos .video-box .video-thumbnail img {
     max-width: 100%;
     border-radius: 50%;
-    max-width: 400px;
+    max-width: 375px;
   }
   #videos .videos .video-box .video-thumbnail .play {
     position: absolute;
@@ -1727,6 +1730,8 @@ html {
 @media (min-width: 0px) {
   #donations {
     width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/donationsbg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/donationsbg.jpg);
     background-color: #F7FFF7;
     background-position: center;
     background-size: cover;
@@ -1740,6 +1745,7 @@ html {
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+    color: white;
   }
   #donations .donations .donations-gallery {
     display: -ms-grid;
@@ -1752,7 +1758,7 @@ html {
         -ms-flex-order: 2;
             order: 2;
     grid-gap: 1em;
-    height: 50vh;
+    height: 370px;
         grid-template-areas: "top top" "left right";
   }
   #donations .donations .donations-gallery .top {
@@ -1802,6 +1808,7 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    line-height: 1.5;
   }
   #donations .donations .donations-text .products {
     display: -ms-grid;
@@ -1817,6 +1824,10 @@ html {
     color: black;
     text-align: center;
     margin-bottom: 1em;
+    color: white;
+  }
+  #donations .donations .donations-text .products .product h2 {
+    color: white;
   }
   #donations .donations .donations-text .products .product button {
     background-color: #55c882;
@@ -1930,14 +1941,11 @@ html {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1000px) {
   #donations {
     width: 100%;
     background-color: #F7FFF7;
     padding: 2em;
-    background-image: url(/images/greenbg1.jpg);
-    background-position: center;
-    background-size: cover;
   }
   #donations .donations {
     width: 100%;
@@ -1965,8 +1973,8 @@ html {
         -ms-flex-order: unset;
             order: unset;
     grid-gap: 1em;
-    height: 504px;
-    width: 504px;
+    height: 500px;
+    width: 500px;
         grid-template-areas: "top top" "left right";
   }
   #donations .donations .donations-gallery .top {
@@ -2013,6 +2021,9 @@ html {
             flex-direction: column;
     height: 100%;
   }
+  #donations .donations .donations-text p {
+    line-height: 1.5;
+  }
   #donations .donations .donations-text .products {
     display: -ms-grid;
     display: grid;
@@ -2022,9 +2033,9 @@ html {
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     place-items: center;
+    color: white;
   }
   #donations .donations .donations-text .products .product {
-    color: black;
     text-align: center;
   }
   #donations .donations .donations-text .products .product button {
@@ -2042,9 +2053,6 @@ html {
   #donations {
     width: 100%;
     background-color: #F7FFF7;
-    background-image: url(/images/greenbg1.jpg);
-    background-position: center;
-    background-size: cover;
     padding: 2em;
   }
   #donations .donations {
@@ -2130,10 +2138,10 @@ html {
     place-items: center;
   }
   #donations .donations .donations-text .products .product {
-    color: black;
     text-align: center;
     margin-bottom: unset;
     margin: 1em;
+    color: white;
   }
   #donations .donations .donations-text .products .product button {
     background-color: #55c882;
@@ -2566,7 +2574,7 @@ html {
   #intro-container {
     width: 100%;
     position: relative;
-    padding: 1em;
+    padding: .5em;
     background-color: #f9f9f9;
   }
   #intro-container .intro-container {
@@ -2646,6 +2654,7 @@ html {
     margin: auto;
     width: 100%;
     max-width: 786px;
+    height: 500px;
   }
   #intro-container .intro-container .intro-content {
     position: relative;

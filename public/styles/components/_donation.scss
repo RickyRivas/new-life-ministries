@@ -1,6 +1,7 @@
 @media (min-width: 0px) {
     #donations {
         width: 100%;
+        background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(/images/donationsbg.jpg);
         background-color: #F7FFF7;
         background-position: center;
         background-size: cover;
@@ -11,6 +12,7 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
+            color: white;
 
             & .donations-gallery {
                 display: grid;
@@ -18,7 +20,7 @@
                 grid-template-rows: 1fr 1fr;
                 order: 2;
                 grid-gap: 1em;
-                height: 50vh;
+                height: 370px;
                 grid-template-areas:
                     "top top"
                     "left right";
@@ -59,6 +61,7 @@
                 justify-content: space-around;
                 align-items: flex-start;
                 flex-direction: column;
+                line-height: 1.5;
 
                 & .products {
                     display: grid;
@@ -71,6 +74,10 @@
                         color: black;
                         text-align: center;
                         margin-bottom: 1em;
+                        color: white;
+                        h2 {
+                            color: white;
+                        }
 
                         & button {
                             background-color: $primary-color;
@@ -177,14 +184,11 @@
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1000px) {
     #donations {
         width: 100%;
         background-color: #F7FFF7;
         padding: 2em;
-        background-image: url(/images/greenbg1.jpg);
-        background-position: center;
-        background-size: cover;
 
         & .donations {
             width: 100%;
@@ -204,8 +208,8 @@
                 grid-template-rows: 1fr 1fr;
                 order: unset;
                 grid-gap: 1em;
-                height: 504px;
-                width: 504px;
+                height: 500px;
+                width: 500px;
                 grid-template-areas:
                     "top top"
                     "left right";
@@ -242,6 +246,9 @@
                 align-items: flex-start;
                 flex-direction: column;
                 height: 100%;
+                p {
+                    line-height: 1.5;
+                }
 
                 & .products {
                     display: grid;
@@ -249,9 +256,9 @@
                     grid-template-columns: 1fr 1fr;
                     grid-template-rows: 1fr 1fr;
                     place-items: center;
+                    color: white;
 
                     & .product {
-                        color: black;
                         text-align: center;
 
                         & button {
@@ -276,9 +283,6 @@
     #donations {
         width: 100%;
         background-color: #F7FFF7;
-        background-image: url(/images/greenbg1.jpg);
-        background-position: center;
-        background-size: cover;
         padding: 2em;
 
         & .donations {
@@ -344,10 +348,10 @@
                     place-items: center;
 
                     & .product {
-                        color: black;
                         text-align: center;
                         margin-bottom: unset;
                         margin: 1em;
+                        color: white;
 
                         & button {
                             background-color: $primary-color;

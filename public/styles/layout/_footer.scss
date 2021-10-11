@@ -124,11 +124,13 @@
     & .footer-container {
       display: grid;
       grid-gap: 1em;
-      width: max-content;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      place-items: center;
+      width: 100%;
       max-width: unset;
       height: 100%;
       margin: auto;
-
     }
 
     & .logo-footer {

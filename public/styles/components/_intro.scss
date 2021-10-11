@@ -2,7 +2,7 @@
     #intro-container {
         width: 100%;
         position: relative;
-        padding: 1em;
+        padding: .5em;
         background-color: #f9f9f9;
 
         .intro-container {
@@ -63,6 +63,7 @@
             margin: auto;
             width: 100%;
             max-width: 786px;
+            height: 500px;
 
             .intro-content {
                 position: relative;
@@ -131,6 +132,7 @@
                         letter-spacing: 8px;
                         font-weight: bolder;
                     }
+
                     span {
                         font-size: 1.1em;
                         margin-top: -10px;
