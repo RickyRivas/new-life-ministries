@@ -115,7 +115,7 @@ html {
     z-index: 0;
     margin: 0;
     letter-spacing: 1.5px;
-    font-size: 18px;
+    font-size: 25px;
   }
   .logo img {
     width: 35px;
@@ -356,7 +356,7 @@ html {
   .logo p {
     z-index: 0;
     margin: 0;
-    font-size: 20px;
+    font-size: 27px;
     letter-spacing: 1.5px;
   }
   .logo img {
@@ -922,13 +922,7 @@ html {
     font-weight: 100;
     font-size: .8em;
   }
-  .footer .site-credit a {
-    text-decoration: none;
-    color: currentColor;
-    cursor: pointer;
-  }
   .footer .site-credit .credit {
-    text-transform: uppercase;
     color: #55c882;
   }
 }
@@ -2798,6 +2792,7 @@ html {
     margin-bottom: 1em;
     font-family: 'Cookie', cursive;
     line-height: 1em;
+    font-weight: 100;
   }
   .project-dir {
     z-index: 2;
@@ -2813,11 +2808,14 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .project-dir h2 {
-    margin-right: .5em;
-    font-family: 'cookie', cursive;
-    font-size: 2em;
+    margin-bottom: .5em;
+    font-size: 1.5em;
   }
   .project-dir img {
     width: 1em;
@@ -2900,9 +2898,9 @@ html {
             align-items: center;
   }
   .project-dir h2 {
-    margin-right: .5em;
     font-size: 2.5em;
     font-family: 'cookie', cursive;
+    margin-bottom: 0;
   }
   .project-dir img {
     width: 1em;
