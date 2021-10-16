@@ -6,7 +6,7 @@ const errorOutput = document.querySelector('.validation')
 form.addEventListener('submit', async (event) => {
     event.preventDefault();
     if (input.value <= 0) {
-        errorOutput.textContent = "***Online donation must be greater than or equal to $5"
+        errorOutput.textContent = "*Note: Minimum of $5 for online donations."
         errorOutput.style.display = 'block';
         errorOutput.style.color = 'Red'
     } else {
@@ -46,10 +46,13 @@ form.addEventListener('submit', async (event) => {
 const popupOverlay = document.querySelector('.donate-popup-overlay');
 const closePopup = document.querySelector('.close-popup');
 const popupTrigger = document.querySelector('.other-popup button');
+const body = document.querySelector('body');
 popupTrigger.addEventListener('click', () => {
     popupOverlay.style.display = 'flex';
+    body.classList.toggle('body-fixed');
 })
 closePopup.addEventListener('click', () => {
     popupOverlay.style.display = 'none';
+      body.classList.toggle('body-fixed');
 })
 
