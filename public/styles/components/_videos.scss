@@ -62,7 +62,7 @@
                     flex-direction: column;
                     padding: 2em;
                     position: relative;
-                    z-index: 2;
+                    z-index: 1;
 
                     & h2 {
                         color: $primary-color;
@@ -233,6 +233,7 @@
         }
     }
 }
+
 @media (min-width: 1000px) {
     #videos {
         width: 100%;
@@ -306,6 +307,23 @@
                     flex-direction: column;
                     padding: 2em;
                     height: 100%;
+
+                    &::before {
+                        content: attr(data-title);
+                        position: absolute;
+                        top: 50%;
+                        left: 60%;
+                        transform: translate(-50%, -50%);
+                        color: $light-gray;
+                        font-size: 6rem;
+                        font-weight: 300;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: none;
+                        z-index: -1;
+                        font-weight: bolder;
+                    }
 
                     & h2 {
                         color: $primary-color;

@@ -1521,7 +1521,7 @@ html {
             flex-direction: column;
     padding: 2em;
     position: relative;
-    z-index: 2;
+    z-index: 1;
   }
   #videos .videos .video-box .video-text h2 {
     color: #55c882;
@@ -1806,6 +1806,29 @@ html {
             flex-direction: column;
     padding: 2em;
     height: 100%;
+  }
+  #videos .videos .video-box .video-text::before {
+    content: attr(data-title);
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #f9f9f9;
+    font-size: 6rem;
+    font-weight: 300;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: none;
+    z-index: -1;
+    font-weight: bolder;
   }
   #videos .videos .video-box .video-text h2 {
     color: #55c882;
