@@ -12,5 +12,7 @@
     "webhook": "stripe listen --forward-to localhost:8888/.netlify/functions/handle-purchase"
   },
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
 }

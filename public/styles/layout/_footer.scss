@@ -1,5 +1,5 @@
 @media (min-width: 0px) {
-  .footer {
+  footer {
     position: relative;
     width: 100vw;
     padding: 2em;
@@ -109,7 +109,7 @@
 }
 
 @media (min-width: 768px) {
-  .footer {
+  footer {
     width: 100vw;
     padding: 2em 1em;
     background-color: $charlestongreen;
@@ -164,7 +164,7 @@
 }
 
 @media (min-width: 1000px) {
-  .footer {
+  footer {
     width: 100vw;
     padding: 2em;
     background-color: $charlestongreen;
