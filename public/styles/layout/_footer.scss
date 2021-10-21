@@ -86,9 +86,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: .8em;
+        font-size: .9em;
         &:hover{
           color: white;
+        }
+        img {
+          width: 1.7rem;
+          margin-right: .3rem;
         }
       }
     }

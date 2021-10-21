@@ -909,10 +909,14 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: .8em;
+    font-size: .9em;
   }
   footer .social-media a:hover {
     color: white;
+  }
+  footer .social-media a img {
+    width: 1.7rem;
+    margin-right: .3rem;
   }
   footer .site-credit {
     margin: .5em 0;
