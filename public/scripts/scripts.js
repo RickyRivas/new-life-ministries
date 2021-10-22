@@ -30,7 +30,8 @@ const videoDonateBtn = document.querySelector('.video-donate');
 
 triggers.forEach(trigger => {
   trigger.addEventListener('click', () => {
-  videoModal.style.display = 'flex'
+    videoModal.style.display = 'flex';
+    currentVideoBox.style.display = 'block'
     body.classList.toggle('body-fixed');
     currentVideoBox.src = trigger.getAttribute('data-video');
     currentVideoBox.allowFullscreen = false;
@@ -39,6 +40,7 @@ triggers.forEach(trigger => {
 // close video
 modalClose.addEventListener('click', () => {
   videoModal.style.display = 'none';
+  currentVideoBox.style.display = 'none'
   body.classList.toggle('body-fixed');
   currentVideoBox.pause();
 })
