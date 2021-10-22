@@ -110,6 +110,16 @@
     <!-- Project Intro -->
     <!-- Videos Start -->
     <section id='videos'>
+      <!-- Video Popup-->
+      <div id='video-modal'>
+        <img id='close' src='/public/images/close2.svg' class='standard-icon' alt='close video modal'>
+        <video controls width="250" class='current-video' src='' autoplay type='video/mp4'>
+        </video>
+        <div class='video-btns'>
+          <a href='#donations' class='video-donate'>Donate Now</a>
+        </div>
+      </div>
+      <!-- Video Popup-->
       <div class='videos'>
         <div class='video-box'>
           <div class='video-text' data-title='ONE'>
@@ -122,7 +132,7 @@
             <img src='images/arrow-down-sign-to-navigate.svg' alt='Arrow down help user navigate' class='arrow-icon'>
           </div>
           <div class='video-thumbnail'>
-            <a href="videos/LaLajaE1(opt).mp4">
+            <a class='vid-trigger' data-video="videos/LaLajaE1(opt).mp4">
               <img src='images/Thumbnail1.jpg' alt='Thumbnail for video 1' class=''>
               <!-- Play Icon -->
               <div class='play'>
@@ -143,7 +153,7 @@
             <img src='images/arrow-down-sign-to-navigate.svg' alt='arrow down help user navigate' class='arrow-icon'>
           </div>
           <div class='video-thumbnail'>
-            <a href="videos/LaLajaE2(opt).mp4">
+            <a class='vid-trigger' data-video="videos/LaLajaE2(opt).mp4">
               <img loading="lazy" src='images/thumbnail2.jpg' alt='Thumbnail for video 2' class=''>
               <!-- Play Icon -->
               <div class='play'>
@@ -165,7 +175,7 @@
               class='arrow-icon'>
           </div>
           <div class='video-thumbnail'>
-            <a href="videos/LaLajaE3(opt).mp4">
+            <a class='vid-trigger' data-video="videos/LaLajaE3(opt).mp4">
               <img loading="lazy" src='images/Thumbnail3.jpg' alt='Thumbnail for video 3' class=''>
               <div class='play'>
                 <img loading="lazy" src='images/play.svg' alt='play icon' class=''>
@@ -185,7 +195,7 @@
               class='arrow-icon'>
           </div>
           <div class='video-thumbnail'>
-            <a href="videos/LaLajaE4(opt).mp4">
+            <a class='vid-trigger' data-video="videos/LaLajaE4(opt).mp4">
               <img loading="lazy" src='images/Thumbnail4.jpg' alt='Thumbnail for video 4' class=''>
               <div class='play'>
                 <img loading="lazy" src='images/play.svg' alt='play icon' class=''>
@@ -205,7 +215,7 @@
               class='arrow-icon'>
           </div>
           <div class='video-thumbnail'>
-            <a href="videos/LaLajaE5(opt).mp4">
+            <a class='vid-trigger' data-video="videos/LaLajaE5(opt).mp4">
               <img loading="lazy" src='images/vimg5.jpg' alt='Thumbnail for video 5' class=''>
               <div class='play'>
                 <img loading="lazy" src='images/play.svg' alt='play icon' class=''>
