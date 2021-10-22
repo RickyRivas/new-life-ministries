@@ -94,6 +94,7 @@ html {
     transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
     background-color: #fff;
     list-style: none;
+    display: none;
   }
   .logo {
     display: -webkit-box;
