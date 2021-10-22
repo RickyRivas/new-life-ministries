@@ -32,16 +32,12 @@ triggers.forEach(trigger => {
   trigger.addEventListener('click', () => {
   videoModal.style.display = 'flex'
     body.classList.toggle('body-fixed');
-  currentVideoBox.src = trigger.getAttribute('data-video');
+    currentVideoBox.src = trigger.getAttribute('data-video');
+    currentVideoBox.allowFullscreen = false;
 })
 })
 // close video
 modalClose.addEventListener('click', () => {
-  videoModal.style.display = 'none';
-  body.classList.toggle('body-fixed');
-  currentVideoBox.pause();
-})
-videoDonateBtn.addEventListener('click', () => {
   videoModal.style.display = 'none';
   body.classList.toggle('body-fixed');
   currentVideoBox.pause();

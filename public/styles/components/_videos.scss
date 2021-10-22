@@ -136,26 +136,7 @@
             max-width: 1000px;
             margin-bottom: 4rem;
         }
-        .video-btns {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            a {
-                color: white;
-                background-color: $primary-color;
-                text-decoration: none;
-                padding: 10px 30px;
-                margin-right: .5rem;
-                cursor: pointer;
-                &:hover{
-                    opacity: .7;
-                }
-            }
-        }
     }
-}
-  video::-webkit-media-controls-fullscreen-button {
-    display: none;
 }
 @keyframes bounce {
 

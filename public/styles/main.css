@@ -1600,32 +1600,6 @@ html {
     max-width: 1000px;
     margin-bottom: 4rem;
   }
-  #video-modal .video-btns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #video-modal .video-btns a {
-    color: white;
-    background-color: #55c882;
-    text-decoration: none;
-    padding: 10px 30px;
-    margin-right: .5rem;
-    cursor: pointer;
-  }
-  #video-modal .video-btns a:hover {
-    opacity: .7;
-  }
-}
-
-video::-webkit-media-controls-fullscreen-button {
-  display: none;
 }
 
 @-webkit-keyframes bounce {
