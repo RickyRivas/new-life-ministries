@@ -108,6 +108,13 @@
       & .credit {
         color: $primary-color;
       }
+      p {
+        line-height: 1.5;
+        a  {
+          color: white;
+          font-weight: bolder;
+        }
+      }
     }
   }
 }

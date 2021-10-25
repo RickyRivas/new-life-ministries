@@ -930,6 +930,13 @@ html {
   footer .site-credit .credit {
     color: #55c882;
   }
+  footer .site-credit p {
+    line-height: 1.5;
+  }
+  footer .site-credit p a {
+    color: white;
+    font-weight: bolder;
+  }
 }
 
 @media (min-width: 768px) {
