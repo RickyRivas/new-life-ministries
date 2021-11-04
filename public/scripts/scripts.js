@@ -1,4 +1,5 @@
- const burger = document.querySelector(".hamburger");
+// Nav
+const burger = document.querySelector(".hamburger");
  const nav = document.querySelector(".nav-links");
 
  burger.addEventListener('click', () => {
@@ -8,7 +9,7 @@
 
  document.querySelector('video').playbackRate = 1;
  const scrollToTopButton = document.querySelector("#js-top");
-
+// 
  const scrollFunc = () => {
    let y = window.scrollY;
    if (y > 0) {
@@ -17,14 +18,7 @@
      scrollToTopButton.className = "bottom-fixed hide";
    }
  };
-
 window.addEventListener("scroll", scrollFunc); 
-
-// video 
-const landingVideo = document.querySelector('#videoBG');
-landingVideo.src = '/videos/landingbg1(optimized).mp4';
-landingVideo.play();
-
 //modal 
 const videoModal = document.querySelector('#video-modal');
 const triggers = document.querySelectorAll('.vid-trigger');
