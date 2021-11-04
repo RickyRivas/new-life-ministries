@@ -21,6 +21,10 @@
 window.addEventListener("scroll", scrollFunc); 
 
 // video 
+const landingVideo = document.querySelector('#videoBG');
+landingVideo.src = '/videos/landingbg1(optimized).mp4';
+landingVideo.play();
+
 //modal 
 const videoModal = document.querySelector('#video-modal');
 const triggers = document.querySelectorAll('.vid-trigger');
