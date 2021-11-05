@@ -2385,6 +2385,7 @@ html {
     margin-bottom: 20px;
     padding: 20px;
     resize: none;
+    font-family: 'Roboto', sans-serif;
   }
   .contact-section .contact-container .contact-form input[type='text']:active,
   .contact-section .contact-container .contact-form input[type='email']:active,
@@ -2467,7 +2468,7 @@ html {
   }
   .contact-section .contact-container .contact-form {
     padding: 1em;
-    width: 100%;
+    width: 80%;
     background-color: #f9f9f9;
   }
   .contact-section .contact-container .contact-form > div {
@@ -2582,7 +2583,7 @@ html {
   }
   .contact-section .contact-container .contact-form {
     padding: 1em;
-    width: 100%;
+    width: 70%;
     height: 556px;
     background-color: #f9f9f9;
   }
