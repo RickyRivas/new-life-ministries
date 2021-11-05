@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Reaching the unchurched people groups of the world.">
   <meta name="keywords" content="">
+
   <!-- Social Media -->
   <meta property="og:title" content="New Life Ministries">
   <meta property="og:site_name" content="New Life Ministries">
@@ -16,8 +17,16 @@
   <meta property="og:url" content="https://offeringnewlife.com/">
   <meta property='og:type' content="website">
   <link rel='canonical' href="https://offeringnewlife.com/">
+
   <!-- Favicon -->
-  <link rel="icon" type='image/png' href="/images/nlmlogo.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
   <!-- Styles -->
   <link href="styles/main.css" rel="stylesheet" />
   <!-- Title -->
@@ -370,6 +379,19 @@
   <script src="scripts/stripe.js"></script>
   <script src='scripts/scripts.js'></script>
   <script src='scripts/customInput.js'></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "New Life Ministries",
+      "url": "https://offeringnewlife.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://offeringnewlife.com/{search_term_string}#donations",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
 </body>
 
 </html>
