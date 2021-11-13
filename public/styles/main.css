@@ -2902,18 +2902,17 @@ html {
     position: fixed;
   }
   .new-landing {
-    width: 100%;
+    width: 100vw;
     height: 625px;
     position: relative;
     padding: 2em;
+    overflow: hidden;
   }
   #videoBG {
     position: absolute;
+    left: 0;
     top: 0;
-    left: 50%;
     z-index: -100;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
