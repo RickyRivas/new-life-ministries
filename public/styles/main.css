@@ -2714,7 +2714,6 @@ html {
 @media (min-width: 0px) {
   #intro-container {
     width: 100%;
-    position: relative;
     padding: .5em;
     background-color: #f9f9f9;
   }
@@ -2738,10 +2737,6 @@ html {
     margin: auto;
     z-index: 10;
     color: white;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/images/dd120.webp);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/dd120.webp);
-    background-position: center;
-    background-size: cover;
   }
   #intro-container .intro-container .intro-content {
     position: relative;
@@ -2758,6 +2753,7 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    z-index: 2;
   }
   #intro-container .intro-container .intro-content > div {
     letter-spacing: 2px;
@@ -2774,6 +2770,13 @@ html {
     font-weight: bold;
     position: relative;
     border-bottom: 1px solid #55c882;
+  }
+  #intro-container .intro-container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
   }
 }
 
@@ -2832,10 +2835,8 @@ html {
 
 @media (min-width: 1024px) {
   #intro-container {
-    width: 100%;
     background-color: #f9f9f9;
     padding: 1em;
-    position: relative;
   }
   #intro-container .intro-container {
     display: -webkit-box;
@@ -2857,10 +2858,6 @@ html {
     width: 100%;
     height: 500px;
     max-width: 1100px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/images/dd120.webp);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/dd120.webp);
-    background-position: center;
-    background-size: cover;
   }
   #intro-container .intro-container .intro-content {
     position: relative;
