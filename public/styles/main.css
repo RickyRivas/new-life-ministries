@@ -1975,7 +1975,7 @@ html {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: left;
-    background-image: url(/images/gridimg1.jpg);
+    background-image: url(/images/gridimg1.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2087,7 +2087,7 @@ html {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: left;
-    background-image: url(/images/gridimg1.jpg);
+    background-image: url(/images/gridimg1.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2188,7 +2188,7 @@ html {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: left;
-    background-image: url(/images/gridimg1.jpg);
+    background-image: url(/images/gridimg1.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2295,7 +2295,7 @@ html {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: left;
-    background-image: url(/images/gridimg1.jpg);
+    background-image: url(/images/gridimg1.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
