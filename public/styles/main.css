@@ -2900,7 +2900,7 @@ html {
   }
   .new-landing {
     width: 100vw;
-    height: 625px;
+    height: 100vh;
     position: relative;
     padding: 1em;
     overflow: hidden;
