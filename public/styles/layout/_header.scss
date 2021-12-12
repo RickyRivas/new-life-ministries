@@ -175,18 +175,6 @@
     width: 100vw;
     background-color: transparent;
 
-    & nav {
-      z-index: 1000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 100%;
-      width: 1000px;
-      margin: auto;
-      background-color: transparent;
-
-    }
-
     & .is-active {
       box-shadow: unset;
       z-index: 100;
@@ -305,7 +293,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 100px;
     width: 100vw;
     background-color: transparent;
 
@@ -315,7 +303,7 @@
       justify-content: space-between;
       align-items: center;
       height: 100%;
-      width: 1000px;
+      max-width: 1200px;
       margin: auto;
       background-color: transparent;
 
@@ -402,8 +390,8 @@
     }
 
     & img {
-      width: 55px;
-      height: 55px;
+      width: 70px;
+      height: 70px;
     }
   }
 
@@ -432,14 +420,13 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   header {
     z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90px;
-    width: 100vw;
+    height: 100px;
     position: absolute;
     top: 0;
     left: 0;
@@ -454,7 +441,6 @@
       justify-content: space-between;
       align-items: center;
       height: 100%;
-      width: 1200px;
       margin: auto;
       background-color: transparent;
 
@@ -490,7 +476,7 @@
     align-items: center;
     opacity: 1;
     white-space: nowrap;
-    font-size: 1em;
+    font-size: 1.2em;
 
 
     &::after {
@@ -515,27 +501,6 @@
     display: none;
   }
 
-  .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    text-align: left;
-    position: relative;
-    color: white;
-
-    & p {
-      z-index: 0;
-      margin: 0;
-      font-size: 30px;
-      letter-spacing: 1.5px;
-    }
-
-    & img {
-      width: 55px;
-      height: 55px;
-    }
-  }
 
   .social-media-icons {
     display: none;

@@ -112,8 +112,6 @@
 
     .new-landing-heading {
         z-index: 2;
-        width: 90%;
-        max-width: 1150px;
         position: absolute;
         color: white;
         height: max-content;
@@ -168,6 +166,28 @@
 @media (min-width: 1000px) {
     .new-landing {
         height: 768px;
+
+        .project-dir {
+            z-index: 2;
+            position: absolute;
+            color: white;
+            bottom: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            & h2 {
+                margin-right: .5em;
+            }
+
+            & img {
+                width: 1em;
+                height: 1em;
+                align-self: center;
+                justify-self: center;
+            }
+        }
     }
 }
 
@@ -197,8 +217,6 @@
 
     .new-landing-heading {
         z-index: 2;
-        width: 90%;
-        max-width: 1150px;
         position: absolute;
         color: white;
         height: max-content;
@@ -214,27 +232,6 @@
         }
     }
 
-    .project-dir {
-        z-index: 2;
-        position: absolute;
-        color: white;
-        bottom: 1em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-
-        & h2 {
-            margin-right: .5em;
-        }
-
-        & img {
-            width: 1em;
-            height: 1em;
-            align-self: center;
-            justify-self: center;
-        }
-    }
 
     & .overlay {
         position: absolute;

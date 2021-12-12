@@ -248,22 +248,6 @@ html {
     width: 100vw;
     background-color: transparent;
   }
-  header nav {
-    z-index: 1000;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100%;
-    width: 1000px;
-    margin: auto;
-    background-color: transparent;
-  }
   header .is-active {
     -webkit-box-shadow: unset;
             box-shadow: unset;
@@ -396,7 +380,7 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 80px;
+    height: 100px;
     width: 100vw;
     background-color: transparent;
   }
@@ -412,7 +396,7 @@ html {
         -ms-flex-align: center;
             align-items: center;
     height: 100%;
-    width: 1000px;
+    max-width: 1200px;
     margin: auto;
     background-color: transparent;
   }
@@ -512,8 +496,8 @@ html {
     letter-spacing: 1.5px;
   }
   .logo img {
-    width: 55px;
-    height: 55px;
+    width: 70px;
+    height: 70px;
   }
   .scroll-p {
     color: white;
@@ -535,7 +519,7 @@ html {
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   header {
     z-index: 1000;
     display: -webkit-box;
@@ -547,8 +531,7 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 90px;
-    width: 100vw;
+    height: 100px;
     position: absolute;
     top: 0;
     left: 0;
@@ -565,7 +548,6 @@ html {
         -ms-flex-align: center;
             align-items: center;
     height: 100%;
-    width: 1200px;
     margin: auto;
     background-color: transparent;
   }
@@ -614,7 +596,7 @@ html {
             align-items: center;
     opacity: 1;
     white-space: nowrap;
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .nav-links li::after {
     content: '';
@@ -632,31 +614,6 @@ html {
   }
   .hamburger.hamburger--spring {
     display: none;
-  }
-  .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0;
-    text-align: left;
-    position: relative;
-    color: white;
-  }
-  .logo p {
-    z-index: 0;
-    margin: 0;
-    font-size: 30px;
-    letter-spacing: 1.5px;
-  }
-  .logo img {
-    width: 55px;
-    height: 55px;
   }
   .social-media-icons {
     display: none;
@@ -3004,8 +2961,6 @@ html {
   }
   .new-landing-heading {
     z-index: 2;
-    width: 90%;
-    max-width: 1150px;
     position: absolute;
     color: white;
     height: -webkit-max-content;
@@ -3064,6 +3019,34 @@ html {
   .new-landing {
     height: 768px;
   }
+  .new-landing .project-dir {
+    z-index: 2;
+    position: absolute;
+    color: white;
+    bottom: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .new-landing .project-dir h2 {
+    margin-right: .5em;
+  }
+  .new-landing .project-dir img {
+    width: 1em;
+    height: 1em;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -3091,8 +3074,6 @@ html {
   }
   .new-landing-heading {
     z-index: 2;
-    width: 90%;
-    max-width: 1150px;
     position: absolute;
     color: white;
     height: -webkit-max-content;
@@ -3108,34 +3089,6 @@ html {
     margin-bottom: 1em;
     font-family: 'Cookie', cursive;
     line-height: 1em;
-  }
-  .project-dir {
-    z-index: 2;
-    position: absolute;
-    color: white;
-    bottom: 1em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-  }
-  .project-dir h2 {
-    margin-right: .5em;
-  }
-  .project-dir img {
-    width: 1em;
-    height: 1em;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
   }
   .overlay {
     position: absolute;
