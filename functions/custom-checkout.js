@@ -29,10 +29,10 @@ exports.handler = async (event) => {
     const session = await stripe.checkout.sessions.create({
         mode: 'payment',
         payment_method_types: ['card'],
-        billing_address_collection: 'auto',
-        shipping_address_collection: {
-            allowed_countries: ['US', 'CA'],
-        },
+        // billing_address_collection: 'auto',
+        // shipping_address_collection: {
+        //     allowed_countries: ['US', 'CA'],
+        // },
 
         //
         success_url: `${process.env.URL}/success.html`,
