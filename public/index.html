@@ -70,7 +70,7 @@
                 <div class='input-div'>
                   <p>$</p>
                   <input  data-type="currency" type="number" class='custom-input' placeholder="" min="5.00"
-                    max="999,999.00" step="0.01" inputmode="decimal" aria-label="donationAmountOther">
+                    max="999,999.00" step="0.01" inputmode="decimal" aria-label="donationAmountOther" required>
                 </div>
                 <button>Donate</button>
                 <p class='validation'>Note: Minimum of $5 for online donations.</p>
@@ -277,16 +277,16 @@
             <p>If we can be of assistance to you for any reason, please fill out the information below.</p>
           </div>
           <p>
-            <label><input placeholder='First Name' type="text" name="first name" /></label>
+            <label><input placeholder='First Name' type="text" name="first name" required/></label>
           </p>
           <p>
-            <label> <input placeholder='Last Name' type="text" name="last name" /></label>
+            <label> <input placeholder='Last Name' type="text" name="last name" required/></label>
           </p>
           <p>
-            <label><input placeholder='Email Address' type="email" name="email" /></label>
+            <label><input placeholder='Email Address' type="email" name="email" required/></label>
           </p>
           <p>
-            <label><textarea placeholder='Enter your message' name="message"></textarea></label>
+            <label><textarea placeholder='Enter your message' name="message" required></textarea></label>
           </p>
           <p>
             <button type="submit">Send</button>
