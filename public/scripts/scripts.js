@@ -19,8 +19,22 @@
    }
  };
 window.addEventListener("scroll", scrollFunc); 
-//modal 
 
+// donate
+const popupOverlay = document.querySelector('.donate-popup-overlay');
+const closePopup = document.querySelector('.close-popup');
+const popupTrigger = document.querySelector('.popup-btn');
+const body = document.querySelector('body');
+popupTrigger.addEventListener('click', () => {
+  popupOverlay.style.display = 'flex';
+  body.classList.toggle('body-fixed');
+})
+closePopup.addEventListener('click', () => {
+  popupOverlay.style.display = 'none';
+  body.classList.toggle('body-fixed');
+})
+
+// video
 const videoModal = document.querySelector('#video-modal');
 const triggers = document.querySelectorAll('.vid-trigger');
 const modalClose = document.querySelector('#close');
