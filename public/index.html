@@ -32,7 +32,7 @@
 
   <!-- Styles -->
   <link href="styles/main.css" rel="stylesheet" />
-
+  <script src="https://js.stripe.com/v3/" defer></script>
   <!-- Title -->
   <title>New Life Ministries</title>
 </head>
@@ -61,25 +61,6 @@
   <!-- Navigation End -->
   <!-- Main Container Start -->
   <main>
-    <!-- Donate Popup -->
-    <div class='donate-popup-overlay'>
-      <div class='donate-popup-content'>
-        <img loading="lazy" class='close-popup standard-icon' alt='close popup' src='images/close.svg'></span>
-        <section id='custom-payment'>
-          <h3>Enter your custom amount.</h3>
-          <form action="/.netlify/functions/custom-checkout" method="post" class='custom-payment-form'>
-            <div class='input-div'>
-              <p>$</p>
-              <input data-type="currency" type="number" class='custom-input' placeholder="5.00" min="5.00"
-                max="999,999.00" step="0.01" inputmode="decimal" aria-label="donationAmountOther">
-            </div>
-            <button>Donate</button>
-            <p class='validation'>Note: Minimum of $5 for online donations.</p>
-          </form>
-        </section>
-      </div>
-    </div>
-    <!-- donate popup -->
     <!-- Side buttons -->
     <div class='fixed-btns'>
       <a href="#donations">Donate</a>
@@ -143,14 +124,15 @@
               loading="lazy">
           </div>
           <div class='video-thumbnail'>
-            <a class='vid-trigger' data-video="https://newlifeministries.s3.us-east-2.amazonaws.com/LaLajaE1(opt).mp4">
+            <button class='vid-trigger'
+              data-video="https://newlifeministries.s3.us-east-2.amazonaws.com/LaLajaE1(opt).mp4">
               <img src='images/Thumbnail1.webp' alt='Thumbnail for video 1' class='' loading="lazy" width="100%">
               <!-- Play Icon -->
               <div class='play'>
                 <img src='images/play.svg' alt='play icon' class='' loading="lazy">
               </div>
               <!-- Play Icon -->
-            </a>
+            </button>
           </div>
         </div>
         <div class='video-box'>
@@ -164,14 +146,15 @@
             <img src='images/arrow-down-sign-to-navigate.svg' alt='arrow down help user navigate' class='arrow-icon'>
           </div>
           <div class='video-thumbnail'>
-            <a class='vid-trigger' data-video="https://newlifeministries.s3.us-east-2.amazonaws.com/LaLajaE2(opt).mp4">
+            <button class='vid-trigger'
+              data-video="https://newlifeministries.s3.us-east-2.amazonaws.com/LaLajaE2(opt).mp4">
               <img loading="lazy" src='images/thumbnail2.jpg' alt='Thumbnail for video 2' class=''>
               <!-- Play Icon -->
               <div class='play'>
                 <img loading="lazy" src='images/play.svg' alt='play icon' class=''>
               </div>
               <!-- Play Icon -->
-            </a>
+            </button>
           </div>
         </div>
         <div class='video-box'>
@@ -186,12 +169,13 @@
               class='arrow-icon'>
           </div>
           <div class='video-thumbnail'>
-            <a class='vid-trigger' data-video="https://newlifeministries.s3.us-east-2.amazonaws.com/LaLajaE3(opt).mp4">
+            <button class='vid-trigger'
+              data-video="https://newlifeministries.s3.us-east-2.amazonaws.com/LaLajaE3(opt).mp4">
               <img loading="lazy" src='images/Thumbnail3.jpg' alt='Thumbnail for video 3' class=''>
               <div class='play'>
                 <img loading="lazy" src='images/play.svg' alt='play icon' class=''>
               </div>
-            </a>
+            </button>
           </div>
         </div>
         <div class='video-box'>
@@ -206,12 +190,13 @@
               class='arrow-icon'>
           </div>
           <div class='video-thumbnail'>
-            <a class='vid-trigger' data-video="https://newlifeministries.s3.us-east-2.amazonaws.com/LaLajaE4(opt).mp4">
+            <button class='vid-trigger'
+              data-video="https://newlifeministries.s3.us-east-2.amazonaws.com/LaLajaE4(opt).mp4">
               <img loading="lazy" src='images/Thumbnail4.jpg' alt='Thumbnail for video 4' class=''>
               <div class='play'>
                 <img loading="lazy" src='images/play.svg' alt='play icon' class=''>
               </div>
-            </a>
+            </button>
           </div>
         </div>
         <div class='video-box'>
@@ -226,12 +211,13 @@
               class='arrow-icon'>
           </div>
           <div class='video-thumbnail'>
-            <a class='vid-trigger' data-video="https://newlifeministries.s3.us-east-2.amazonaws.com/LaLajaE5(opt).mp4">
+            <button class='vid-trigger'
+              data-video="https://newlifeministries.s3.us-east-2.amazonaws.com/LaLajaE5(opt).mp4">
               <img loading="lazy" src='images/vimg5.webp' alt='Thumbnail for video 5' class=''>
               <div class='play'>
                 <img loading="lazy" src='images/play.svg' alt='play icon' class=''>
               </div>
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -378,8 +364,26 @@
       </form>
     </div>
   </template>
+  <!-- Donate Popup -->
+  <div class='donate-popup-overlay'>
+    <div class='donate-popup-content'>
+      <img loading="lazy" class='close-popup standard-icon' alt='close popup' src='images/close.svg'></span>
+      <section id='custom-payment'>
+        <h3>Enter your custom amount.</h3>
+        <form action="/.netlify/functions/custom-checkout" method="post" class='custom-payment-form'>
+          <div class='input-div'>
+            <p>$</p>
+            <input data-type="currency" type="number" class='custom-input' placeholder="5.00" min="5.00"
+              max="999,999.00" step="0.01" inputmode="decimal" aria-label="donationAmountOther">
+          </div>
+          <button>Donate</button>
+          <p class='validation'>Note: Minimum of $5 for online donations.</p>
+        </form>
+      </section>
+    </div>
+  </div>
+  <!-- donate popup -->
   <!-- Product Template -->
-  <script src="https://js.stripe.com/v3/"></script>
   <script src="scripts/stripe.js"></script>
   <script src='scripts/scripts.js'></script>
   <script src='scripts/customInput.js'></script>

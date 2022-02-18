@@ -1,11 +1,11 @@
 // Nav
-const burger = document.querySelector(".hamburger");
- const nav = document.querySelector(".nav-links");
+// const burger = document.querySelector(".hamburger");
+//  const nav = document.querySelector(".nav-links");
 
- burger.addEventListener('click', () => {
-   burger.classList.toggle('is-active');
-   nav.classList.toggle('is-active');
- })
+//  burger.addEventListener('click', () => {
+//    burger.classList.toggle('is-active');
+//    nav.classList.toggle('is-active');
+//  })
 
  document.querySelector('video').playbackRate = 1;
  const scrollToTopButton = document.querySelector("#js-top");
@@ -20,6 +20,7 @@ const burger = document.querySelector(".hamburger");
  };
 window.addEventListener("scroll", scrollFunc); 
 //modal 
+
 const videoModal = document.querySelector('#video-modal');
 const triggers = document.querySelectorAll('.vid-trigger');
 const modalClose = document.querySelector('#close');
@@ -42,3 +43,4 @@ modalClose.addEventListener('click', () => {
   body.classList.toggle('body-fixed');
   currentVideoBox.pause();
 })
+

@@ -357,7 +357,7 @@ html {
     color: #000;
   }
   .nav-links li a:hover {
-    color: #55c882;
+    color: #2ca95d;
   }
   .hamburger.hamburger--spring {
     display: none;
@@ -509,7 +509,7 @@ html {
     color: #000;
   }
   .nav-links li a:hover {
-    color: #55c882;
+    color: #2ca95d;
   }
   .hamburger.hamburger--spring {
     display: none;
@@ -884,7 +884,7 @@ html {
     font-size: 14px;
   }
   footer .site-credit .credit {
-    color: #55c882;
+    color: #2ca95d;
   }
   footer .site-credit p {
     line-height: 1.5;
@@ -1093,7 +1093,7 @@ html {
   }
   .fixed-btns a {
     color: white;
-    background-color: #55c882;
+    background-color: #2ca95d;
     padding: 5px 20px;
     text-decoration: none;
     margin-right: .5em;
@@ -1125,7 +1125,7 @@ html {
   }
   .fixed-btns a {
     color: white;
-    background-color: #55c882;
+    background-color: #2ca95d;
     padding: 5px 20px;
     text-decoration: none;
     margin-right: .5em;
@@ -1250,7 +1250,7 @@ html {
 }
 
 .donate-popup-overlay #custom-payment .custom-payment-form button {
-  background-color: #55c882;
+  background-color: #2ca95d;
   padding: 10px 30px;
   color: white;
   border: 0;
@@ -1288,7 +1288,7 @@ html {
     border-right: 1px solid white;
   }
   .bottom-fixed a {
-    background-color: #55c882;
+    background-color: #2ca95d;
     color: white;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1334,7 +1334,7 @@ html {
     border-right: 1px solid black;
   }
   .bottom-fixed a {
-    background-color: #55c882;
+    background-color: #2ca95d;
     color: white;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1440,7 +1440,6 @@ html {
   #videos .videos .video-box .video-thumbnail {
     z-index: 2;
     position: relative;
-    cursor: pointer;
   }
   #videos .videos .video-box .video-thumbnail img {
     max-width: 100%;
@@ -1465,15 +1464,19 @@ html {
         -ms-flex-align: center;
             align-items: center;
   }
-  #videos .videos .video-box .video-thumbnail .play:hover {
-    background-color: #55c882;
-  }
   #videos .videos .video-box .video-thumbnail .play img {
     width: 1em;
     height: 1em;
   }
-  #videos .videos .video-box .video-thumbnail:hover .play {
-    background-color: #55c882;
+  #videos .videos .video-box .video-thumbnail button.vid-trigger {
+    background-color: white;
+    border: 0;
+  }
+  #videos .videos .video-box .video-thumbnail button.vid-trigger:hover {
+    cursor: pointer;
+  }
+  #videos .videos .video-box .video-thumbnail button.vid-trigger:hover .play {
+    background-color: #2ca95d;
   }
   #videos .videos .video-box .video-text {
     display: -webkit-box;
@@ -1493,7 +1496,7 @@ html {
     z-index: 1;
   }
   #videos .videos .video-box .video-text h2 {
-    color: #55c882;
+    color: #2ca95d;
     font-weight: bolder;
     font-size: 2em;
     display: block;
@@ -1508,8 +1511,8 @@ html {
     left: 0;
     height: 2px;
     width: 100px;
-    background: -webkit-gradient(linear, left top, right top, from(#55c882), color-stop(74%, #55c882), color-stop(74%, rgba(255, 255, 255, 0)), color-stop(87%, rgba(255, 255, 255, 0)), color-stop(87%, #55c882));
-    background: linear-gradient(to right, #55c882 0%, #55c882 74%, rgba(255, 255, 255, 0) 74%, rgba(255, 255, 255, 0) 87%, #55c882 87%);
+    background: -webkit-gradient(linear, left top, right top, from(#2ca95d), color-stop(74%, #2ca95d), color-stop(74%, rgba(255, 255, 255, 0)), color-stop(87%, rgba(255, 255, 255, 0)), color-stop(87%, #2ca95d));
+    background: linear-gradient(to right, #2ca95d 0%, #2ca95d 74%, rgba(255, 255, 255, 0) 74%, rgba(255, 255, 255, 0) 87%, #2ca95d 87%);
   }
   #videos .videos .video-box .video-text span {
     color: rgba(0, 0, 0, 0.8);
@@ -1673,7 +1676,7 @@ html {
             align-items: center;
   }
   #videos .videos .video-box .video-thumbnail .play:hover {
-    background-color: #55c882;
+    background-color: #2ca95d;
   }
   #videos .videos .video-box .video-thumbnail .play img {
     width: 1em;
@@ -1697,7 +1700,7 @@ html {
     height: 100%;
   }
   #videos .videos .video-box .video-text h2 {
-    color: #55c882;
+    color: #2ca95d;
     font-weight: bolder;
     display: block;
     position: relative;
@@ -1709,8 +1712,8 @@ html {
     left: 0;
     height: 2px;
     width: 100px;
-    background: -webkit-gradient(linear, left top, right top, from(#55c882), color-stop(74%, #55c882), color-stop(74%, rgba(255, 255, 255, 0)), color-stop(87%, rgba(255, 255, 255, 0)), color-stop(87%, #55c882));
-    background: linear-gradient(to right, #55c882 0%, #55c882 74%, rgba(255, 255, 255, 0) 74%, rgba(255, 255, 255, 0) 87%, #55c882 87%);
+    background: -webkit-gradient(linear, left top, right top, from(#2ca95d), color-stop(74%, #2ca95d), color-stop(74%, rgba(255, 255, 255, 0)), color-stop(87%, rgba(255, 255, 255, 0)), color-stop(87%, #2ca95d));
+    background: linear-gradient(to right, #2ca95d 0%, #2ca95d 74%, rgba(255, 255, 255, 0) 74%, rgba(255, 255, 255, 0) 87%, #2ca95d 87%);
   }
   #videos .videos .video-box .video-text span {
     color: rgba(0, 0, 0, 0.8);
@@ -1794,7 +1797,7 @@ html {
             align-items: center;
   }
   #videos .videos .video-box .video-thumbnail .play:hover {
-    background-color: #55c882;
+    background-color: #2ca95d;
   }
   #videos .videos .video-box .video-thumbnail .play img {
     width: 1em;
@@ -1841,7 +1844,7 @@ html {
     font-weight: bolder;
   }
   #videos .videos .video-box .video-text h2 {
-    color: #55c882;
+    color: #2ca95d;
     font-weight: bolder;
     font-size: 2.5em;
     display: block;
@@ -1854,8 +1857,8 @@ html {
     left: 0;
     height: 2px;
     width: 100px;
-    background: -webkit-gradient(linear, left top, right top, from(#55c882), color-stop(74%, #55c882), color-stop(74%, rgba(255, 255, 255, 0)), color-stop(87%, rgba(255, 255, 255, 0)), color-stop(87%, #55c882));
-    background: linear-gradient(to right, #55c882 0%, #55c882 74%, rgba(255, 255, 255, 0) 74%, rgba(255, 255, 255, 0) 87%, #55c882 87%);
+    background: -webkit-gradient(linear, left top, right top, from(#2ca95d), color-stop(74%, #2ca95d), color-stop(74%, rgba(255, 255, 255, 0)), color-stop(87%, rgba(255, 255, 255, 0)), color-stop(87%, #2ca95d));
+    background: linear-gradient(to right, #2ca95d 0%, #2ca95d 74%, rgba(255, 255, 255, 0) 74%, rgba(255, 255, 255, 0) 87%, #2ca95d 87%);
   }
   #videos .videos .video-box .video-text span {
     color: rgba(0, 0, 0, 0.8);
@@ -1974,7 +1977,7 @@ html {
     color: white;
   }
   #donations .donations .donations-text .products .product button {
-    background-color: #55c882;
+    background-color: #2ca95d;
     padding: 10px 30px;
     color: white;
     border: 0;
@@ -2078,7 +2081,7 @@ html {
     text-align: center;
   }
   #donations .donations .donations-text .products .product button {
-    background-color: #55c882;
+    background-color: #2ca95d;
     padding: 10px 30px;
     color: white;
     border: 0;
@@ -2183,7 +2186,7 @@ html {
     text-align: center;
   }
   #donations .donations .donations-text .products .product button {
-    background-color: #55c882;
+    background-color: #2ca95d;
     padding: 10px 30px;
     color: white;
     border: 0;
@@ -2288,7 +2291,7 @@ html {
     color: white;
   }
   #donations .donations .donations-text .products .product button {
-    background-color: #55c882;
+    background-color: #2ca95d;
     padding: 10px 30px;
     color: white;
     border: 0;
@@ -2350,7 +2353,7 @@ html {
     border: 1px solid blue;
   }
   .contact-section .contact-container .contact-form button {
-    background-color: #55c882;
+    background-color: #2ca95d;
     border: none;
     padding: 10px 30px;
     color: white;
@@ -2450,7 +2453,7 @@ html {
     border: 1px solid blue;
   }
   .contact-section .contact-container .contact-form button {
-    background-color: #55c882;
+    background-color: #2ca95d;
     border: none;
     padding: 10px 30px;
     color: white;
@@ -2563,7 +2566,7 @@ html {
     border: 1px solid blue;
   }
   .contact-section .contact-container .contact-form button {
-    background-color: #55c882;
+    background-color: #2ca95d;
     border: none;
     padding: 10px 30px;
     color: white;
@@ -2660,7 +2663,7 @@ html {
     border: 1px solid blue;
   }
   .contact-section .contact-container .contact-form button {
-    background-color: #55c882;
+    background-color: #2ca95d;
     border: none;
     padding: 20px 30px;
     color: white;
@@ -2726,7 +2729,7 @@ html {
     margin-top: -10px;
     font-weight: bold;
     position: relative;
-    border-bottom: 1px solid #55c882;
+    border-bottom: 1px solid #2ca95d;
   }
   #intro-container .intro-container img {
     width: 100%;
@@ -2785,7 +2788,7 @@ html {
   #intro-container .intro-container .intro-content > div span {
     font-size: 1.1em;
     margin-top: -10px;
-    border-bottom: 2px solid #55c882;
+    border-bottom: 2px solid #2ca95d;
     font-weight: bold;
   }
 }
@@ -2844,7 +2847,7 @@ html {
   #intro-container .intro-container .intro-content > div span {
     font-size: 1.1em;
     margin-top: -10px;
-    border-bottom: 2px solid #55c882;
+    border-bottom: 2px solid #2ca95d;
   }
 }
 

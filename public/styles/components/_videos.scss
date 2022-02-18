@@ -21,8 +21,6 @@
                 & .video-thumbnail {
                     z-index: 2;
                     position: relative;
-                    cursor: pointer;
-
                     & img {
                         max-width: 100%;
 
@@ -41,21 +39,24 @@
                         justify-content: center;
                         align-items: center;
 
-                        &:hover {
-                            background-color: $primary-color;
-                        }
 
                         & img {
                             width: 1em;
                             height: 1em;
                         }
                     }
+                    button.vid-trigger {
+                        background-color: white;
+                        border: 0;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                        &:hover .play {
+                            background-color: $primary-color;
+                        }
+                    }
                 }
 
-                // when user hovers over the parent => the child background color will change
-                & .video-thumbnail:hover .play {
-                    background-color: $primary-color;
-                }
 
                 & .video-text {
                     display: flex;
@@ -105,10 +106,11 @@
             }
         }
     }
+
     // Video Modal
     #video-modal {
         position: fixed;
-        background-color: rgba(0,0,0,10);
+        background-color: rgba(0, 0, 0, 10);
         width: 100%;
         height: 100%;
         top: 0;
@@ -120,6 +122,7 @@
         z-index: 9997;
         display: none;
         animation: opacityPopup .5s;
+
         #close {
             position: absolute;
             top: 1rem;
@@ -131,6 +134,7 @@
             width: 1.5rem;
             height: 1.5rem;
         }
+
         .current-video {
             display: none;
             width: 100%;
@@ -138,6 +142,7 @@
         }
     }
 }
+
 @keyframes bounce {
 
     0%,
