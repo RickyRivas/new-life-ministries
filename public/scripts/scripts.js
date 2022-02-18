@@ -45,7 +45,7 @@ triggers.forEach(trigger => {
   trigger.addEventListener('click', () => {
     videoModal.style.display = 'flex';
     currentVideoBox.style.display = 'block'
-    body.classList.toggle('body-fixed');
+    // body.classList.toggle('body-fixed');
     currentVideoBox.src = trigger.getAttribute('data-video');
     currentVideoBox.play();
 })
@@ -54,7 +54,7 @@ triggers.forEach(trigger => {
 modalClose.addEventListener('click', () => {
   videoModal.style.display = 'none';
   currentVideoBox.style.display = 'none'
-  body.classList.toggle('body-fixed');
+  // body.classList.toggle('body-fixed');
   currentVideoBox.pause();
 })
 
