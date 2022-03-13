@@ -1181,6 +1181,11 @@ html {
   top: 1em;
   right: 1em;
   cursor: pointer;
+  background-color: white;
+  border: 0;
+}
+
+.donate-popup-overlay .donate-popup-content .close-popup img {
   width: 1em;
   height: 1em;
 }
@@ -1202,7 +1207,7 @@ html {
           flex-direction: column;
 }
 
-.donate-popup-overlay #custom-payment h3 {
+.donate-popup-overlay #custom-payment label {
   margin-bottom: 1em;
 }
 
@@ -1493,6 +1498,18 @@ form.donate-btn-new button {
 
 form.donate-btn-new button:hover {
   opacity: .9;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 @media (min-width: 0px) {

@@ -109,8 +109,12 @@
             top: 1em;
             right: 1em;
             cursor: pointer;
-            width: 1em;
-            height: 1em;
+            background-color: white;
+            border: 0;
+            img {
+                width: 1em;
+                height: 1em;
+            }
 
         }
     }
@@ -122,7 +126,7 @@
         align-items: center;
         flex-direction: column;
 
-        h3 {
+        label {
             margin-bottom: 1em;
         }
 
