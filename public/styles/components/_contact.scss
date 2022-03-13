@@ -42,6 +42,9 @@
           &:active {
             border: 1px solid blue;
           }
+          &::placeholder{
+            color: #222;
+          }
         }
 
         & button {

@@ -2452,6 +2452,26 @@ input[type=number] {
   .contact-section .contact-container .contact-form textarea:active {
     border: 1px solid blue;
   }
+  .contact-section .contact-container .contact-form input[type="text"]::-webkit-input-placeholder,
+  .contact-section .contact-container .contact-form input[type="email"]::-webkit-input-placeholder,
+  .contact-section .contact-container .contact-form textarea::-webkit-input-placeholder {
+    color: #222;
+  }
+  .contact-section .contact-container .contact-form input[type="text"]:-ms-input-placeholder,
+  .contact-section .contact-container .contact-form input[type="email"]:-ms-input-placeholder,
+  .contact-section .contact-container .contact-form textarea:-ms-input-placeholder {
+    color: #222;
+  }
+  .contact-section .contact-container .contact-form input[type="text"]::-ms-input-placeholder,
+  .contact-section .contact-container .contact-form input[type="email"]::-ms-input-placeholder,
+  .contact-section .contact-container .contact-form textarea::-ms-input-placeholder {
+    color: #222;
+  }
+  .contact-section .contact-container .contact-form input[type="text"]::placeholder,
+  .contact-section .contact-container .contact-form input[type="email"]::placeholder,
+  .contact-section .contact-container .contact-form textarea::placeholder {
+    color: #222;
+  }
   .contact-section .contact-container .contact-form button {
     background-color: #2ca95d;
     border: none;
