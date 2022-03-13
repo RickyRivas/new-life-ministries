@@ -66,21 +66,12 @@
         <img loading="lazy" class='close-popup standard-icon' alt='close popup' src='images/close.svg'></span>
         <section id='custom-payment'>
           <h3>Enter your custom amount.</h3>
-          <!-- <form action="/.netlify/functions/custom-checkout" method="post" class='custom-payment-form'>
-            <div class='input-div'>
-              <p>$</p>
-              <input data-type="currency" type="number" class='custom-input' placeholder="0.00" min="5.00" max="999,999.00"
-                step="0.01" inputmode="decimal" aria-label="donationAmountOther" required>
-            </div>
-            <button>Donate</button>
-            <p class='validation'>Note: Minimum of $5 for online donations.</p>
-          </form> -->
           <form action="/.netlify/functions/custom-checkout" method="post" class='custom-payment-form donate-btn-new'>
             <div class="location">
               <img src="images/dollar-symbol.svg" alt="">
             </div>
             <input data-type="currency" type="number" class='custom-input' placeholder="5.00" min="5.00"
-              max="999,999.00" step="0.01" inputmode="decimal" aria-label="donationAmountOther" required>
+              max="999,999.00" step="1" inputmode="decimal" aria-label="donationAmountOther" required>
             <button>Give</button>
           </form>
           <p class='validation'>Note: Minimum of $5 for online donations.</p>
