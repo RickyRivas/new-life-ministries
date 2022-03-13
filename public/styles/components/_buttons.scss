@@ -98,7 +98,7 @@
         padding: 1em;
         width: 100%;
         max-width: 500px;
-        height: 50vh;
+        height: 300px;
         max-height: 500px;
         z-index: 9999;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -109,6 +109,9 @@
             top: 1em;
             right: 1em;
             cursor: pointer;
+            width: 1em;
+            height: 1em;
+
         }
     }
 
@@ -128,7 +131,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 35px;
+            height: 2.5em;
 
             .input-div {
                 display: flex;
@@ -142,16 +145,6 @@
                     margin-right: .1em;
                 }
 
-                .custom-input {
-                    width: 100%;
-                    margin-right: .5em;
-                    font-size: 1em;
-                    height: 100%;
-                    padding: 10px;
-                    border-radius: unset;
-                    border: 1px solid #ccc;
-                    box-shadow: none;
-                }
             }
 
             button {
@@ -166,17 +159,18 @@
                 }
             }
 
-            .validation {
-                position: absolute;
-                bottom: 1em;
-                padding: 1em;
-                color: rgba(0, 0, 0, .5);
-                font-size: 1em;
-                text-align: center;
-            }
-
         }
     }
+
+    .validation {
+        position: absolute;
+        bottom: 1em;
+        padding: 1em;
+        color: rgba(0, 0, 0, .5);
+        font-size: 1em;
+        text-align: center;
+    }
+
 }
 
 @media (min-width: 0px) {
@@ -217,6 +211,7 @@
         }
     }
 }
+
 @media (min-width: 1200px) {
     .bottom-fixed {
         position: fixed;
@@ -256,6 +251,7 @@
         }
     }
 }
+
 @keyframes opacityPopup {
     0% {
         opacity: 0;
@@ -291,5 +287,68 @@
     &.hide {
         visibility: hidden;
         opacity: 0;
+    }
+}
+
+/* Form elements */
+
+form.donate-btn-new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 3em;
+    border-radius: 1em;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+    /* location  */
+    .location {
+        background-color: #c1efd3;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .5em;
+        position: relative;
+        border-radius: 1em 0 0 1em;
+    }
+
+    .location img {
+        width: 1.2em;
+        height: 1.2em;
+    }
+
+    /* search bar */
+    input[type='number'] {
+        border: 0;
+        height: 100%;
+        padding: 1em;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    input[type='number']::placeholder {
+        color: #222;
+        font-size: 1em;
+    }
+
+    button {
+        border: 0;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        border-radius: 0 1em 1em 0;
+        background-color: #2ca95d;
+        color: white;
+        width: max-content;
+        padding: 1em;
+    }
+
+    button:hover {
+        opacity: .9;
     }
 }

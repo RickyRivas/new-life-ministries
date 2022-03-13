@@ -60,25 +60,34 @@
   <!-- Navigation End -->
   <!-- Main Container Start -->
   <main>
-        <!-- Donate Popup -->
-        <div class='donate-popup-overlay'>
-          <div class='donate-popup-content'>
-            <img loading="lazy" class='close-popup standard-icon' alt='close popup' src='images/close.svg'></span>
-            <section id='custom-payment'>
-              <h3>Enter your custom amount.</h3>
-              <form action="/.netlify/functions/custom-checkout" method="post" class='custom-payment-form'>
-                <div class='input-div'>
-                  <p>$</p>
-                  <input  data-type="currency" type="number" class='custom-input' placeholder="" min="5.00"
-                    max="999,999.00" step="0.01" inputmode="decimal" aria-label="donationAmountOther" required>
-                </div>
-                <button>Donate</button>
-                <p class='validation'>Note: Minimum of $5 for online donations.</p>
-              </form>
-            </section>
-          </div>
-        </div>
-        <!-- donate popup -->
+    <!-- Donate Popup -->
+    <div class='donate-popup-overlay'>
+      <div class='donate-popup-content'>
+        <img loading="lazy" class='close-popup standard-icon' alt='close popup' src='images/close.svg'></span>
+        <section id='custom-payment'>
+          <h3>Enter your custom amount.</h3>
+          <!-- <form action="/.netlify/functions/custom-checkout" method="post" class='custom-payment-form'>
+            <div class='input-div'>
+              <p>$</p>
+              <input data-type="currency" type="number" class='custom-input' placeholder="0.00" min="5.00" max="999,999.00"
+                step="0.01" inputmode="decimal" aria-label="donationAmountOther" required>
+            </div>
+            <button>Donate</button>
+            <p class='validation'>Note: Minimum of $5 for online donations.</p>
+          </form> -->
+          <form action="/.netlify/functions/custom-checkout" method="post" class='custom-payment-form donate-btn-new'>
+            <div class="location">
+              <img src="images/dollar-symbol.svg" alt="">
+            </div>
+            <input data-type="currency" type="number" class='custom-input' placeholder="5.00" min="5.00"
+              max="999,999.00" step="0.01" inputmode="decimal" aria-label="donationAmountOther" required>
+            <button>Give</button>
+          </form>
+          <p class='validation'>Note: Minimum of $5 for online donations.</p>
+        </section>
+      </div>
+    </div>
+    <!-- donate popup -->
     <!-- Side buttons -->
     <div class='fixed-btns'>
       <a href="#donations">Donate</a>
@@ -220,18 +229,19 @@
         <div class='video-box'>
           <div class='video-text' data-title='FIVE'>
             <div>
-              <h2>Update with Exciting News</h2>
+              <h2>What A Journey</h2>
               <span>Episode Five</span>
             </div>
-            <p>Never could we have imagined all that has come together as of late. We are super excited for the new
-              plans and outreach opportunities that we have been given.</p>
+            <p>
+              After an interesting 24 months around the world, I was finally able to get back to La Laja. Now it’s time
+              to wrap up Phase 2. </p>
             <img loading="lazy" src='images/arrow-down-sign-to-navigate.svg' alt='arrow down help user navigate'
               class='arrow-icon'>
           </div>
           <div class='video-thumbnail'>
             <button class='vid-trigger'
-              data-video="https://newlifeministries.s3.us-east-2.amazonaws.com/LaLajaE5(opt).mp4">
-              <img loading="lazy" src='images/vimg5.webp' alt='Thumbnail for video 5' class=''>
+              data-video="https://newlifeministries.s3.us-east-2.amazonaws.com/MEXICO+FULL+RECAP_1.mp4">
+              <img loading="lazy" src='images/IMG_1967.webp' alt='Thumbnail for video 5' class=''>
               <div class='play'>
                 <img loading="lazy" src='images/play.svg' alt='play icon' class=''>
               </div>
@@ -277,13 +287,13 @@
             <p>If we can be of assistance to you for any reason, please fill out the information below.</p>
           </div>
           <p>
-            <label><input placeholder='First Name' type="text" name="first name" required/></label>
+            <label><input placeholder='First Name' type="text" name="first name" required /></label>
           </p>
           <p>
-            <label> <input placeholder='Last Name' type="text" name="last name" required/></label>
+            <label> <input placeholder='Last Name' type="text" name="last name" required /></label>
           </p>
           <p>
-            <label><input placeholder='Email Address' type="email" name="email" required/></label>
+            <label><input placeholder='Email Address' type="email" name="email" required /></label>
           </p>
           <p>
             <label><textarea placeholder='Enter your message' name="message" required></textarea></label>
@@ -368,7 +378,7 @@
       </div>
     </div>
     <div class='site-credit'>
-      <p>&copy 2021 <span class='credit'> New Life Ministries</span> | All Rights Reserved
+      <p>&copy 2022 <span class='credit'> New Life Ministries</span> | All Rights Reserved
       </p>
     </div>
   </footer>

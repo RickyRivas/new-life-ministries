@@ -1167,7 +1167,7 @@ html {
   padding: 1em;
   width: 100%;
   max-width: 500px;
-  height: 50vh;
+  height: 300px;
   max-height: 500px;
   z-index: 9999;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -1181,6 +1181,8 @@ html {
   top: 1em;
   right: 1em;
   cursor: pointer;
+  width: 1em;
+  height: 1em;
 }
 
 .donate-popup-overlay #custom-payment {
@@ -1215,7 +1217,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 35px;
+  height: 2.5em;
 }
 
 .donate-popup-overlay #custom-payment .custom-payment-form .input-div {
@@ -1237,18 +1239,6 @@ html {
   margin-right: .1em;
 }
 
-.donate-popup-overlay #custom-payment .custom-payment-form .input-div .custom-input {
-  width: 100%;
-  margin-right: .5em;
-  font-size: 1em;
-  height: 100%;
-  padding: 10px;
-  border-radius: unset;
-  border: 1px solid #ccc;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
 .donate-popup-overlay #custom-payment .custom-payment-form button {
   background-color: #2ca95d;
   padding: 10px 30px;
@@ -1261,7 +1251,7 @@ html {
   opacity: .8;
 }
 
-.donate-popup-overlay #custom-payment .custom-payment-form .validation {
+.donate-popup-overlay .validation {
   position: absolute;
   bottom: 1em;
   padding: 1em;
@@ -1412,6 +1402,96 @@ html {
 .top-link.hide {
   visibility: hidden;
   opacity: 0;
+}
+
+/* Form elements */
+form.donate-btn-new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1em;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 300px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* location  */
+  /* search bar */
+}
+
+form.donate-btn-new .location {
+  background-color: #c1efd3;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5em;
+  position: relative;
+  border-radius: 1em 0 0 1em;
+}
+
+form.donate-btn-new .location img {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+form.donate-btn-new input[type='number'] {
+  border: 0;
+  height: 100%;
+  padding: 1em;
+  width: 100%;
+  font-size: 16px;
+}
+
+form.donate-btn-new input[type='number']::-webkit-input-placeholder {
+  color: #222;
+  font-size: 1em;
+}
+
+form.donate-btn-new input[type='number']:-ms-input-placeholder {
+  color: #222;
+  font-size: 1em;
+}
+
+form.donate-btn-new input[type='number']::-ms-input-placeholder {
+  color: #222;
+  font-size: 1em;
+}
+
+form.donate-btn-new input[type='number']::placeholder {
+  color: #222;
+  font-size: 1em;
+}
+
+form.donate-btn-new button {
+  border: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0 1em 1em 0;
+  background-color: #2ca95d;
+  color: white;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1em;
+}
+
+form.donate-btn-new button:hover {
+  opacity: .9;
 }
 
 @media (min-width: 0px) {
