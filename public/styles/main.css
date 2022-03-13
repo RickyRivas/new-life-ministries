@@ -2433,8 +2433,8 @@ input[type=number] {
   .contact-section .contact-container .contact-form > div h2 {
     margin-bottom: 1em;
   }
-  .contact-section .contact-container .contact-form input[type='text'],
-  .contact-section .contact-container .contact-form input[type='email'],
+  .contact-section .contact-container .contact-form input[type="text"],
+  .contact-section .contact-container .contact-form input[type="email"],
   .contact-section .contact-container .contact-form textarea {
     width: 100%;
     border: 0;
@@ -2443,10 +2443,12 @@ input[type=number] {
     margin-bottom: 20px;
     padding: 20px;
     resize: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #222;
   }
-  .contact-section .contact-container .contact-form input[type='text']:active,
-  .contact-section .contact-container .contact-form input[type='email']:active,
+  .contact-section .contact-container .contact-form input[type="text"]:active,
+  .contact-section .contact-container .contact-form input[type="email"]:active,
   .contact-section .contact-container .contact-form textarea:active {
     border: 1px solid blue;
   }
@@ -2458,7 +2460,17 @@ input[type=number] {
     width: 100%;
   }
   .contact-section .contact-container .contact-form button:hover {
-    opacity: .8;
+    opacity: 0.8;
+  }
+  .contact-section .contact-container .contact-form label.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
   }
   .contact-section .contact-container .contact-divs {
     width: 100%;
@@ -2533,10 +2545,10 @@ input[type=number] {
     margin-bottom: 1em;
   }
   .contact-section .contact-container .contact-form > div p {
-    font-size: .9em;
+    font-size: 0.9em;
   }
-  .contact-section .contact-container .contact-form input[type='text'],
-  .contact-section .contact-container .contact-form input[type='email'],
+  .contact-section .contact-container .contact-form input[type="text"],
+  .contact-section .contact-container .contact-form input[type="email"],
   .contact-section .contact-container .contact-form textarea {
     width: 100%;
     border: 0;
@@ -2545,8 +2557,8 @@ input[type=number] {
     margin-bottom: 20px;
     padding: 20px;
   }
-  .contact-section .contact-container .contact-form input[type='text']:active,
-  .contact-section .contact-container .contact-form input[type='email']:active,
+  .contact-section .contact-container .contact-form input[type="text"]:active,
+  .contact-section .contact-container .contact-form input[type="email"]:active,
   .contact-section .contact-container .contact-form textarea:active {
     border: 1px solid blue;
   }
@@ -2584,7 +2596,7 @@ input[type=number] {
   }
   .contact-section .contact-container .contact-info h2 {
     margin-bottom: 1em;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .contact-section .contact-container .contact-info .flex {
     display: -webkit-box;
@@ -2600,7 +2612,7 @@ input[type=number] {
     position: relative;
   }
   .contact-section .contact-container .contact-info .flex p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .contact-section .contact-container .contact-info .flex a {
     cursor: pointer;
@@ -2648,8 +2660,8 @@ input[type=number] {
   .contact-section .contact-container .contact-form > div {
     margin-bottom: 1em;
   }
-  .contact-section .contact-container .contact-form input[type='text'],
-  .contact-section .contact-container .contact-form input[type='email'],
+  .contact-section .contact-container .contact-form input[type="text"],
+  .contact-section .contact-container .contact-form input[type="email"],
   .contact-section .contact-container .contact-form textarea {
     width: 100%;
     border: 0;
@@ -2658,8 +2670,8 @@ input[type=number] {
     margin-bottom: 20px;
     padding: 20px;
   }
-  .contact-section .contact-container .contact-form input[type='text']:active,
-  .contact-section .contact-container .contact-form input[type='email']:active,
+  .contact-section .contact-container .contact-form input[type="text"]:active,
+  .contact-section .contact-container .contact-form input[type="email"]:active,
   .contact-section .contact-container .contact-form textarea:active {
     border: 1px solid blue;
   }
@@ -2692,7 +2704,7 @@ input[type=number] {
   }
   .contact-section .contact-container .contact-info h2 {
     margin-bottom: 1em;
-    font-size: .9em;
+    font-size: 0.9em;
   }
   .contact-section .contact-container .contact-info .flex {
     display: -webkit-box;
@@ -2708,7 +2720,7 @@ input[type=number] {
     position: relative;
   }
   .contact-section .contact-container .contact-info .flex p {
-    margin-bottom: .4rem;
+    margin-bottom: 0.4rem;
   }
 }
 
@@ -2745,8 +2757,8 @@ input[type=number] {
   .contact-section .contact-container .contact-form > div {
     margin-bottom: 1em;
   }
-  .contact-section .contact-container .contact-form input[type='text'],
-  .contact-section .contact-container .contact-form input[type='email'],
+  .contact-section .contact-container .contact-form input[type="text"],
+  .contact-section .contact-container .contact-form input[type="email"],
   .contact-section .contact-container .contact-form textarea {
     width: 100%;
     border: 0;
@@ -2755,8 +2767,8 @@ input[type=number] {
     margin-bottom: 20px;
     padding: 20px;
   }
-  .contact-section .contact-container .contact-form input[type='text']:active,
-  .contact-section .contact-container .contact-form input[type='email']:active,
+  .contact-section .contact-container .contact-form input[type="text"]:active,
+  .contact-section .contact-container .contact-form input[type="email"]:active,
   .contact-section .contact-container .contact-form textarea:active {
     border: 1px solid blue;
   }

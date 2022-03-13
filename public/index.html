@@ -61,10 +61,11 @@
   <!-- Main Container Start -->
   <main>
     <!-- Donate Popup -->
-    <div class='donate-popup-overlay' id='main-modal' tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class='donate-popup-overlay' id='main-modal' tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
       <div class='donate-popup-content' role="document">
         <button class='close-popup' data-dismiss="modal" aria-label="Close">
-        <img alt='close popup' src='images/close.svg'>
+          <img alt='close popup' src='images/close.svg'>
         </button>
         <section id='custom-payment'>
           <label>Enter your custom amount.</label>
@@ -72,8 +73,8 @@
             <div class="location">
               <img src="images/dollar-symbol.svg" alt="">
             </div>
-            <input data-type="currency" type="number" class='custom-input' placeholder="5.00" min="5.00"
-              max="100000" step="1" inputmode="decimal" aria-label="donationAmountOther" tabindex="1" required>
+            <input data-type="currency" type="number" class='custom-input' placeholder="5.00" min="5.00" max="100000"
+              step="1" inputmode="decimal" aria-label="donationAmountOther" tabindex="1" required>
             <button id='donate-btn'>Give</button>
           </form>
           <p class='validation'>Note: Minimum of $5 for online donations.</p>
@@ -279,21 +280,15 @@
             <h2>Get in touch.</h2>
             <p>If we can be of assistance to you for any reason, please fill out the information below.</p>
           </div>
-          <p>
-            <label><input placeholder='First Name' type="text" name="first name" required /></label>
-          </p>
-          <p>
-            <label> <input placeholder='Last Name' type="text" name="last name" required /></label>
-          </p>
-          <p>
-            <label><input placeholder='Email Address' type="email" name="email" required /></label>
-          </p>
-          <p>
-            <label><textarea placeholder='Enter your message' name="message" required></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+          <label class="visually-hidden" for="fname">First Name</label>
+          <input placeholder='First Name' id='fname' type="text" name="first name" required />
+          <label class="visually-hidden" for="lname">Last Name</label>
+          <input placeholder='Last Name' id='lname' type="text" name="last name" required />
+          <label class="visually-hidden" for="email">Email</label>
+          <input placeholder='Email Address' id='email' type="email" name="email" required />
+          <label class="visually-hidden" for="message">message</label>
+          <textarea placeholder='Enter your message' id='message' name="message" required></textarea>
+          <button type="submit">Send</button>
         </form>
         <!-- Form End -->
         <div class='contact-divs'>
