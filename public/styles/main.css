@@ -2433,6 +2433,9 @@ input[type=number] {
   .contact-section .contact-container .contact-form > div h2 {
     margin-bottom: 1em;
   }
+  .contact-section .contact-container .contact-form > div p {
+    line-height: 2;
+  }
   .contact-section .contact-container .contact-form input[type="text"],
   .contact-section .contact-container .contact-form input[type="email"],
   .contact-section .contact-container .contact-form textarea {
